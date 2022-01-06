@@ -4,16 +4,17 @@
 
 # Site
 title: Scszone's blog
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
+subtitle: 'Listen to your inner voice.'
+description: '这是一个最好的时代，也是最坏的时代，我们亲身经历着激动人心的变革，也往往会陷入选择的迷茫。'
+keywords: scszone,学习笔记
+author: Scszone
 language: en
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://www.scszone.online
+root: /
 #permalink: :year/:month/:day/:title/
 permalink_defaults:
 abbrlink:
@@ -113,3 +114,8 @@ deploy:
 
 sitemap:
   path: googlesitemap.xml
+
+site_verification:
+  google: 
+  bing: 6CDECB7628FCAB6B2809D0BB2021D458
+

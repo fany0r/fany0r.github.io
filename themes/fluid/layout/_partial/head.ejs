@@ -26,6 +26,9 @@ if (page.description) {
   <meta name="description" content="<%= description %>">
   <meta name="author" content="<%= page.author || config.author %>">
   <meta name="keywords" content="<%= keywords %>">
+  <% if (config.site_verification.bing){ %>
+    <meta name="msvalidate.01" content="<%= config.site_verification.bing %>" />
+  <% } %>
   <%- open_graph(theme.open_graph || {}) %>
   <% if (theme.custom_head) { %>
     <%- theme.custom_head %>
