@@ -2,7 +2,6 @@ User-agent: googlebot-image
 Disallow: /
 
 User-agent: *
-Disallow: /tags/
 Disallow: /about/
 
 Sitemap: https://www.scszone.online/googlesitemap.xml
