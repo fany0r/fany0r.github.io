@@ -6,7 +6,7 @@ tags:
   - 0day
 copyright: true
 password: sec666
-message: Please enter the password to read the blog.
+message: Please enter the password.
 abbrlink: 2fbbc18b
 index_img: https://z3.ax1x.com/2021/11/12/IDPSiQ.png
 date: 2021-11-12 13:59:06
