@@ -4,4 +4,4 @@ Disallow: /
 User-agent: *
 Disallow: /about/
 
-Sitemap: https://www.scszone.online/googlesitemap.xml
+Sitemap: https://www.scszone.online/sitemap.xml

@@ -113,9 +113,9 @@ deploy:
   branch: master
 
 sitemap:
-  path: googlesitemap.xml
+  path: /sitemap.xml
 
 site_verification:
-  google: 
-  bing: 6CDECB7628FCAB6B2809D0BB2021D458
+  google: 'aRrmmijetNhnMBk-nPF-NZEY_-eKtWdEhfA-DLeuMLk'
+  bing: '6CDECB7628FCAB6B2809D0BB2021D458'
 
