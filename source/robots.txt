@@ -2,6 +2,17 @@ User-agent: googlebot-image
 Disallow: /
 
 User-agent: *
-Disallow: /about/
+Allow: /
+Allow: /post/
+Allow: /archives/
+Allow: /tags/
+Allow: /categories/
+Allow: /about/
+
+Disallow: /js/
+Disallow: /lib/
+Disallow: /css/
+Disallow: /assets/js/
+Disallow: /assets/css/
 
 Sitemap: https://www.scszone.online/sitemap.xml
