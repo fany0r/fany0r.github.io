@@ -64,7 +64,7 @@ CreateObject("WScript.Shell").Run """C:\Program Files\XMind\XmindFull.cmd""",0
 
 **Tips**
 
-1、关闭自动更新：编译-首选项-关闭自动更新
+1、关闭自动更新：编辑-首选项-关闭自动更新
 
 2、通过Windows自带的防火墙(WF.msc)和火绒新建策略禁止XMind联网，原因嘛，懂的都懂，毕竟是破解难免有点啥。
 
