@@ -8,6 +8,7 @@ categories:
 copyright: true
 abbrlink: cdf8e41e
 index_img: https://s2.ax1x.com/2019/07/13/Z4drIs.jpg
+banner_img: https://s2.ax1x.com/2019/07/13/Z4drIs.jpg
 date: 2019-07-13 16:19:25
 ---
 

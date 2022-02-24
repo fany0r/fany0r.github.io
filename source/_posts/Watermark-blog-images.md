@@ -8,6 +8,7 @@ categories:
 copyright: true
 abbrlink: ba9aa5f5
 index_img: https://s2.ax1x.com/2019/07/02/ZYmNqI.png
+banner_img: https://s2.ax1x.com/2019/07/02/ZYmNqI.png
 date: 2019-07-02 22:42:54
 ---
 

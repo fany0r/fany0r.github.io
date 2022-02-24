@@ -8,6 +8,7 @@ categories:
 copyright: true
 abbrlink: d73c51dd
 index_img: https://s1.ax1x.com/2020/10/14/04356A.md.jpg
+banner_img: https://s1.ax1x.com/2020/10/14/04356A.md.jpg
 date: 2020-07-25 13:52:51
 ---
 

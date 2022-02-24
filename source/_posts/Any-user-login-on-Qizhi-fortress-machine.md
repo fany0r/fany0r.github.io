@@ -7,6 +7,7 @@ categories:
 copyright: true
 abbrlink: f8593b1e
 index_img: https://z3.ax1x.com/2021/07/13/WFHmrV.jpg
+banner_img: https://z3.ax1x.com/2021/07/13/WFHmrV.jpg
 date: 2021-07-12 21:33:54
 ---
 

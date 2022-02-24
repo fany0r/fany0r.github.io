@@ -5,8 +5,8 @@ tags:
   - vuln
 categories:
   - 漏洞复现
-index_img: >-
-  https://rmt.ladydaily.com/fetch/fluid/storage/hexo-static/cover.jpg?w=480&fmt=webp
+index_img: https://rmt.ladydaily.com/fetch/fluid/storage/hexo-static/cover.jpg?w=480&fmt=webp
+banner_img: https://rmt.ladydaily.com/fetch/fluid/storage/hexo-static/cover.jpg?w=480&fmt=webp
 abbrlink: e3164948
 date: 2022-02-17 15:49:04
 ---

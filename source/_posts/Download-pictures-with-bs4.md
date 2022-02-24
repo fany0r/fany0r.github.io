@@ -10,6 +10,7 @@ categories:
 copyright: true
 abbrlink: f939aff4
 index_img: https://ae01.alicdn.com/kf/HTB1rJGdaBGE3KVjSZFhq6AkaFXaN.jpg
+banner_img: https://ae01.alicdn.com/kf/HTB1rJGdaBGE3KVjSZFhq6AkaFXaN.jpg
 ---
 
 

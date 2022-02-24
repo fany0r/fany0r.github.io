@@ -8,6 +8,7 @@ categories:
 copyright: true
 abbrlink: 20516be2
 index_img: https://s1.ax1x.com/2020/06/13/tjv4Z8.jpg
+banner_img: https://s1.ax1x.com/2020/06/13/tjv4Z8.jpg
 date: 2020-06-13 13:14:03
 ---
 

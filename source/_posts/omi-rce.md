@@ -8,6 +8,7 @@ categories:
 copyright: true
 abbrlink: c089dc91
 index_img: https://z3.ax1x.com/2021/10/01/47pRaQ.png
+banner_img: https://z3.ax1x.com/2021/10/01/47pRaQ.png
 date: 2021-10-01 13:21:28
 ---
 

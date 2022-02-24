@@ -9,6 +9,7 @@ categories:
   - 技术水文
 copyright: true
 index_img: https://ae01.alicdn.com/kf/HTB13y5aaEWF3KVjSZPhq6xclXXa2.jpg
+banner_img: https://ae01.alicdn.com/kf/HTB13y5aaEWF3KVjSZPhq6xclXXa2.jpg
 ---
 
 

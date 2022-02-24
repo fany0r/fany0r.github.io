@@ -6,6 +6,7 @@ categories:
 copyright: true
 abbrlink: f3a0015a
 index_img: https://z3.ax1x.com/2021/05/14/grkYEF.png
+banner_img: https://z3.ax1x.com/2021/05/14/grkYEF.png
 date: 2021-05-14 05:20:17
 tags:
   - Go
@@ -28,7 +29,7 @@ tags:
 
 ### 改改标识
 
-​	全局查找替换：`json:"
+​	全局查找替换：`json:"`
 
 ![image-20210511015109411](https://z3.ax1x.com/2021/05/14/grkStH.png)
 

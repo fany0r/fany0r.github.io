@@ -8,6 +8,7 @@ categories:
 copyright: true
 abbrlink: f8cabab2
 index_img: https://ae01.alicdn.com/kf/HTB1Cb5jaBGw3KVjSZFDq6xWEpXak.jpg
+banner_img: https://ae01.alicdn.com/kf/HTB1Cb5jaBGw3KVjSZFDq6xWEpXak.jpg
 date: 2019-05-11 22:24:06
 ---
 

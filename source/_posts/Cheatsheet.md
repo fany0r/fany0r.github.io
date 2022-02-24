@@ -7,6 +7,7 @@ categories:
 copyright: true
 abbrlink: 554d428f
 index_img: https://ae01.alicdn.com/kf/HTB1NN5aav1H3KVjSZFHq6zKppXaI.jpg
+banner_img: https://ae01.alicdn.com/kf/HTB1NN5aav1H3KVjSZFHq6zKppXaI.jpg
 date: 2019-02-09 17:02:18
 ---
 

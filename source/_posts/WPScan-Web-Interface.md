@@ -8,6 +8,7 @@ categories:
 copyright: true
 abbrlink: 1dd3590f
 index_img: https://ae01.alicdn.com/kf/HTB1NR5jaECF3KVjSZJnq6znHFXa0.jpg
+banner_img: https://ae01.alicdn.com/kf/HTB1NR5jaECF3KVjSZJnq6znHFXa0.jpg
 date: 2019-01-11 15:19:49
 ---
 

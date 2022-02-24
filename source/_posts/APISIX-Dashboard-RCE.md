@@ -7,6 +7,7 @@ copyright: true
 categories:
   - 漏洞复现
 index_img: 'https://s4.ax1x.com/2022/01/05/TvdJgS.png'
+banner_img: 'https://s4.ax1x.com/2022/01/05/TvdJgS.png'
 abbrlink: af29eede
 date: 2022-01-03 22:08:50
 ---

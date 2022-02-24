@@ -6,6 +6,7 @@ categories:
 copyright: true
 abbrlink: 4fc730d4
 index_img: https://assets.xmind.net/www/assets/images/download/new/img-download-zen@3x-7f572fc69b.png
+banner_img: https://assets.xmind.net/www/assets/images/download/new/img-download-zen@3x-7f572fc69b.png
 date: 2021-10-17 20:04:20
 ---
 

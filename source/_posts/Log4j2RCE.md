@@ -8,6 +8,7 @@ categories:
   - 漏洞复现
 abbrlink: 7b02d9dd
 index_img: https://s1.ax1x.com/2021/12/10/ooEXND.png
+banner_img: https://s1.ax1x.com/2021/12/10/ooEXND.png
 date: 2021-12-10 15:28:01
 ---
 

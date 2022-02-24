@@ -8,6 +8,7 @@ categories:
 copyright: true
 abbrlink: eea35710
 index_img: https://s1.ax1x.com/2020/05/08/YnCX8g.png
+banner_img: https://s1.ax1x.com/2020/05/08/YnCX8g.png
 date: 2020-04-25 02:24:19
 ---
 

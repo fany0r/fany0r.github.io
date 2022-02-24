@@ -5,6 +5,7 @@ categories:
 copyright: true
 abbrlink: c8e756ab
 index_img: https://z3.ax1x.com/2021/04/10/cdNJ6P.png
+banner_img: https://z3.ax1x.com/2021/04/10/cdNJ6P.png
 date: 2021-04-07 16:46:07
 tags:
 ---

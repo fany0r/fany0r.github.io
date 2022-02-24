@@ -7,6 +7,7 @@ categories:
 copyright: true
 abbrlink: 3ca0a42e
 index_img: https://ae01.alicdn.com/kf/H7b8f123b3b7c429ea12026ac5ba07e60Y.jpg
+banner_img: https://ae01.alicdn.com/kf/H7b8f123b3b7c429ea12026ac5ba07e60Y.jpg
 date: 2020-01-11 17:20:51
 ---
 

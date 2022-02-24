@@ -8,6 +8,7 @@ categories:
 copyright: true
 abbrlink: db84c847
 index_img: https://ae01.alicdn.com/kf/HTB103ykaBaE3KVjSZLeq6xsSFXaX.jpg
+banner_img: https://ae01.alicdn.com/kf/HTB103ykaBaE3KVjSZLeq6xsSFXaX.jpg
 date: 2018-12-28 22:53:51
 ---
 

@@ -6,6 +6,7 @@ categories:
   - 转载搬运
 abbrlink: 5be9406d
 index_img: https://ae01.alicdn.com/kf/HTB1kfGiaBGE3KVjSZFh763kaFXa4.png
+banner_img: https://ae01.alicdn.com/kf/HTB1kfGiaBGE3KVjSZFh763kaFXa4.png
 date: 2019-03-05 09:13:45
 copyright:
 ---

@@ -9,6 +9,7 @@ categories:
 copyright: true
 abbrlink: 3dd71f61
 index_img: https://ae01.alicdn.com/kf/HTB1qUX.awaH3KVjSZFjq6AFWpXar.jpg
+banner_img: https://ae01.alicdn.com/kf/HTB1qUX.awaH3KVjSZFjq6AFWpXar.jpg
 date: 2018-07-26 01:38:31
 ---
 

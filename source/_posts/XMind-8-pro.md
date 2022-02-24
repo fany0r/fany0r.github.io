@@ -6,6 +6,7 @@ categories:
 copyright: true
 abbrlink: ba174219
 index_img: https://ae01.alicdn.com/kf/Hadf02e78dcc242b39a8c22001291d860G.png
+banner_img: https://ae01.alicdn.com/kf/Hadf02e78dcc242b39a8c22001291d860G.png
 date: 2019-07-28 15:04:20
 ---
 
