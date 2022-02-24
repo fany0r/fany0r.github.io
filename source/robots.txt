@@ -15,4 +15,4 @@ Disallow: /css/
 Disallow: /assets/js/
 Disallow: /assets/css/
 
-Sitemap: https://www.scszone.online/sitemap.xml
+Sitemap: https://guosec.online/sitemap.xml

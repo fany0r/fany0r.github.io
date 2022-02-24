@@ -116,7 +116,8 @@ sitemap:
   path: /sitemap.xml
 
 site_verification:
-  google: 'aRrmmijetNhnMBk-nPF-NZEY_-eKtWdEhfA-DLeuMLk'
+  #google: 'aRrmmijetNhnMBk-nPF-NZEY_-eKtWdEhfA-DLeuMLk'
+  google: '-aHgnC4GpgdSy24VC2beoxvaFnCzmcyt_Z8p2ZnILy0'
   bing: '6CDECB7628FCAB6B2809D0BB2021D458'
 
 # yasuo
