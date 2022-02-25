@@ -1,5 +1,5 @@
 ---
-title: Bypass AV online CS
+title: Bypass AV 内存查杀
 copyright: true
 categories:
   - 技术水文
@@ -11,7 +11,7 @@ tags:
 ---
 
 
-以下内容基于WBG大佬的：[cs bypass卡巴斯基内存查杀 2](https://xz.aliyun.com/t/9399)  
+原文 WBG大佬的：[cs bypass卡巴斯基内存查杀 2](https://xz.aliyun.com/t/9399)  
 
 > 我们知道内存扫描是耗时耗力不管是卡巴还是其他杀软，一般来说都是扫描进程中一些高危的区域比如带有可执行属性的内存区域，既然他扫描带有X（可执行）属性的内存区域那么只要我们去除X属性，那自然就不会被扫也就不会被发现，但问题是去除X属性后Beacon也就跑不起来，但是不用怕我们知道Windows进程触发异常时我们可以对它处理，而此时我们可以在一瞬间恢复内存X属性让它跑起来然后等它再次进入sleep时去除X属性隐藏起来。
 
@@ -21,7 +21,7 @@ tags:
 
 也就是通过手动创建bug来bypass。WBG大佬4月发的文章，时间蛮久了，直接拿来用估计不行，稍做修改。读bin文件操作改为直接赋值并加入经过rc4加密 (https://github.com/bats3c/DefensiveInjector/blob/master/main.c#L124-L183)。
 
-Visual Studio 新建空项目，把WBG大佬给出的demo放入其中，加入以下代码：
+Visual Studio 新建空项目，把WBG大佬给出的demo导入，加入以下代码：
 
 ```c++
 BOOL DecryptShellcode()
@@ -121,17 +121,17 @@ xxd -i encmeter.bin > encmeter.txt
 
 把转换后的encmeter.txt内容放进带代码中，编译生成。详情见 https://www.bilibili.com/video/BV1yT4y1Z7HW
 
-![image-20211203000135086](https://z3.ax1x.com/2021/12/03/oULSeg.png)
+![](https://z3.ax1x.com/2021/12/03/oULSeg.png)
 
 效果：
 
 Defender、某绒、某数字无感知直接上线并执行命令。据说国内杀软都可以过，这个没去一个个试就不清楚了。
 
-![image-20211203000443902](https://z3.ax1x.com/2021/12/03/oULPFs.png)
+![](https://z3.ax1x.com/2021/12/03/oULPFs.png)
 
 卡巴，不出意外，上线后瞬间就被干掉了....... 
 
-![image-20211203001113890](https://z3.ax1x.com/2021/12/03/oULpwQ.png)
+![](https://z3.ax1x.com/2021/12/03/oULpwQ.png)
 
 CS加上C2配置
 
@@ -205,11 +205,11 @@ http-post {
 
 然后简单改改特征，如增加资源图标、属性信息之类。
 
-![image-20211203002221312](https://z3.ax1x.com/2021/12/03/oUL9oj.png)
+![](https://z3.ax1x.com/2021/12/03/oUL9oj.png)
 
 tasklist /svc
 
-![image-20211203003409065](https://z3.ax1x.com/2021/12/03/oUqxOS.png)
+![](https://z3.ax1x.com/2021/12/03/oUqxOS.png)
 
 
 

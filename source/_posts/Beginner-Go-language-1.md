@@ -10,6 +10,7 @@ abbrlink: ac7b27c4
 index_img: https://ae01.alicdn.com/kf/HTB1eSKbaBiE3KVjSZFMq6zQhVXaK.jpg
 banner_img: https://ae01.alicdn.com/kf/HTB1eSKbaBiE3KVjSZFMq6zQhVXaK.jpg
 date: 2018-12-12 00:23:57
+hide: true
 ---
 
 ### 示例 hello_word.go

@@ -1,5 +1,5 @@
 ---
-title: 某OA(CNVD-2021-7*)漏洞
+title: 某OA(CNVD-2021-*)漏洞
 tags:
   - vuln
   - OA

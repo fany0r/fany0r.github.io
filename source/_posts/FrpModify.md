@@ -31,7 +31,7 @@ tags:
 
 ​	全局查找替换：`json:"`
 
-![image-20210511015109411](https://z3.ax1x.com/2021/05/14/grkStH.png)
+![](https://z3.ax1x.com/2021/05/14/grkStH.png)
 
 ### 修改默认加密salt
 
@@ -112,7 +112,7 @@ const (
 )
 ```
 
-![image-20210511004008468](https://z3.ax1x.com/2021/05/14/grFzAe.png)
+![](https://z3.ax1x.com/2021/05/14/grFzAe.png)
 
 ### WSS加域前置？
 
@@ -284,13 +284,13 @@ cd -
 
 ```
 
-![image-20210511181953839](https://z3.ax1x.com/2021/05/14/grkC9A.png)
+![](https://z3.ax1x.com/2021/05/14/grkC9A.png)
 
 ```shell
 zsh ./package.sh
 ```
 
-![image-20210511182350685](https://z3.ax1x.com/2021/05/14/grkP1I.png)
+![](https://z3.ax1x.com/2021/05/14/grkP1I.png)
 
 ### 后续1:把配置写入源码食用方式
 
@@ -367,7 +367,7 @@ var statusCmd = &cobra.Command{
 }
 ```
 
-![image-20210512015012841](https://z3.ax1x.com/2021/05/14/grkEB8.png)
+![](https://z3.ax1x.com/2021/05/14/grkEB8.png)
 
 #### 改`reload.go`
 
@@ -392,7 +392,7 @@ var reloadCmd = &cobra.Command{
 }
 ```
 
-![image-20210512015110274](https://z3.ax1x.com/2021/05/14/grkAnf.png)
+![](https://z3.ax1x.com/2021/05/14/grkAnf.png)
 
 再回到`root.go` 文件`runClient`方法，注释198行（未改动时应该在184行），然后新增一行：
 
@@ -400,13 +400,13 @@ var reloadCmd = &cobra.Command{
 content, err = []byte(fileContent), nil
 ```
 
-![image-20210512015955784](https://z3.ax1x.com/2021/05/14/grkFjP.png)
+![](https://z3.ax1x.com/2021/05/14/grkFjP.png)
 
 重新编译，运行：
 
-![image-20210512021538506](https://z3.ax1x.com/2021/05/14/grkeAg.png)
+![](https://z3.ax1x.com/2021/05/14/grkeAg.png)
 
-![image-20210512021920839](https://z3.ax1x.com/2021/05/14/grkVHS.png)
+![](https://z3.ax1x.com/2021/05/14/grkVHS.png)
 
 ### 后续2:通过参数传入食用方法
 
@@ -428,7 +428,7 @@ rootCmd.PersistentFlags().StringVarP(&port, "server_port", "p", "", "server_port
 rootCmd.PersistentFlags().StringVarP(&fport, "remote_port", "f", "", "remote_port")
 ```
 
-![image-20210513160922457](https://z3.ax1x.com/2021/05/14/grkK9s.png)
+![](https://z3.ax1x.com/2021/05/14/grkK9s.png)
 
 #### 创建存放配置信息的方法
 
@@ -478,11 +478,11 @@ func runClient(cfgFilePath string, ip string, port string, fport string) (err er
 }
 ```
 
-![image-20210513161652939](https://z3.ax1x.com/2021/05/14/grknhj.png)
+![](https://z3.ax1x.com/2021/05/14/grknhj.png)
 
 ​	同一文件，100行附近 `var rootCmd = &cobra.Command` 中调用了`runClient()`，需要修改传入参数：
 
-![image-20210513162410862](https://z3.ax1x.com/2021/05/14/grkmNQ.png)
+![](https://z3.ax1x.com/2021/05/14/grkmNQ.png)
 
 #### 	编译打包
 
@@ -528,7 +528,7 @@ cd -
 ./frpc -t 192.168.176.128 -p 7777 -f 9999
 ```
 
-![image-20210513045854252](https://z3.ax1x.com/2021/05/14/grklj0.png)
+![](https://z3.ax1x.com/2021/05/14/grklj0.png)
 
 ### 后续3:加资源/图标混淆？	
 
@@ -536,37 +536,37 @@ cd -
 
 提取图标：
 
-![image-20210511183416429](https://z3.ax1x.com/2021/05/14/grk3uV.png)
+![](https://z3.ax1x.com/2021/05/14/grk3uV.png)
 
 打开`Restorator` ，拖入frp到资源树栏，添加资源，类型选图标，名称任意，拖入图标文件到下图【wps】中。
 
-![image-20210511184242375](https://z3.ax1x.com/2021/05/14/grk8BT.png)
+![](https://z3.ax1x.com/2021/05/14/grk8BT.png)
 
 然后右键软件另存即可。
 
-![image-20210511184637872](https://z3.ax1x.com/2021/05/14/grkGHU.png)
+![](https://z3.ax1x.com/2021/05/14/grkGHU.png)
 
 ### 后续4:UPX压缩减小体积？
 
 ​	@Secde0大佬说：`别压缩了，有些文件超过10m反而直接放行了，小的被拦截概率大`。我不信，上upx压缩后，用010Editor，删除一下头部标识：upx全部填充为0：
 
-![image-20210511191202357](https://z3.ax1x.com/2021/05/14/grkYEF.png)
+![](https://z3.ax1x.com/2021/05/14/grkYEF.png)
 
 压缩后确实加大查杀率了.........
 
 ​	1为不压缩、5为upx压缩、4为压缩+改标识
 
-![image-20210511192131252](https://z3.ax1x.com/2021/05/14/grktN4.png)
+![(https://z3.ax1x.com/2021/05/14/grktN4.png)
 
 ### 试验
 
 linu to Linux
 
-![image-20210512050918076](https://z3.ax1x.com/2021/05/14/grkaC9.png)
+![](https://z3.ax1x.com/2021/05/14/grkaC9.png)
 
 Windows to Linux
 
-![image-20210512051445193](https://z3.ax1x.com/2021/05/14/grkN4J.png)
+![](https://z3.ax1x.com/2021/05/14/grkN4J.png)
 
 Reference 
 

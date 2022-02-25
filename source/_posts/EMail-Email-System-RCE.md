@@ -21,7 +21,7 @@ HW漏洞，亿邮电子邮件系统存在远程命令执行漏洞，可执行任
 
 ​	登录页面这样子：
 
-![img](https://z3.ax1x.com/2021/07/13/WFbJYQ.png)
+![](https://z3.ax1x.com/2021/07/13/WFbJYQ.png)
 
 写个xray PoC验证一下
 
@@ -46,7 +46,7 @@ detail:
 
 结果如下：
 
-![img](https://z3.ax1x.com/2021/07/13/WFb1w8.png)
+![](https://z3.ax1x.com/2021/07/13/WFb1w8.png)
 
 发送请求包：
 
@@ -64,11 +64,11 @@ type='|cat /etc/passwd||'
 
 `cat /etc/passwd`
 
-![img](https://z3.ax1x.com/2021/07/13/WFbGFg.png)
+![](https://z3.ax1x.com/2021/07/13/WFbGFg.png)
 
 当前网络连接情况：
 
-![img](https://z3.ax1x.com/2021/07/13/WFb3TS.png)
+![](https://z3.ax1x.com/2021/07/13/WFb3TS.png)
 
 PY脚本
 

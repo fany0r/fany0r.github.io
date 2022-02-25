@@ -114,7 +114,7 @@ c:\Windows\WinSxS\amd64_microsoft-windows-lxss-bash_31bf3856ad364e35_10.0.17134.
 
 ![secnotes8.png](https://ae01.alicdn.com/kf/HTB1lAijaBGw3KVjSZFD760WEpXaF.png)
 
-为了方便，使用python反弹个交互式的shell会话
+为了方便，使用python反弹个shell会话
 
 ```bash
 python -c 'import pty;pty.spawn("/bin/bash")'

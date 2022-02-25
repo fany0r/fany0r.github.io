@@ -1,5 +1,5 @@
 ---
-title: VMware安装MacOS(MK-unlocker)
+title: VMware安装MacOS-MK-unlocker
 tags:
   - Cracked
   - Bug
@@ -69,7 +69,7 @@ net start "VMwareHostd" > NUL 2>&1
 
 去除破解的 `win-uninstall.cmd` 也类似，修改相应的地方即可。
 
-[完整脚本下载地址](https://github.com/Kuibagit/Resource/blob/master/MK-unlocker.zip)：https://github.com/Kuibagit/Resource/blob/master/MK-unlocker.zip
+完整脚本下载地址：https://github.com/Kuibagit/Resource/blob/master/MK-unlocker.zip
 
 ```cmd
 @echo off

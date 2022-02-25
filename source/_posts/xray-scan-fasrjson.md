@@ -12,7 +12,7 @@ banner_img: https://s1.ax1x.com/2020/06/13/tjv4Z8.jpg
 date: 2020-06-13 13:14:03
 ---
 
-> 以下简文来自于@loulan-ling师傅
+> 简文来自于@loulan-ling师傅
 
 ### 白嫖xray高级版
 

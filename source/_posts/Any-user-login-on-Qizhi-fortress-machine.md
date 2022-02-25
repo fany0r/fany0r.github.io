@@ -36,7 +36,7 @@ http://xxx.xxx.xxx.xxx/audit/gui_detail_view.php?token=1&id=%5C&uid=%2Cchr(97))%
 
 切换超管角色：
 
-![img](https://z3.ax1x.com/2021/07/13/WFHpb8.png)
+![](https://z3.ax1x.com/2021/07/13/WFHpb8.png)
 
 PY脚本
 

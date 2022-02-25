@@ -72,7 +72,7 @@ mv cacert.pem 9a5ba575.0
 
 ![](https://ae01.alicdn.com/kf/HTB1pRCXaxiH3KVjSZPf760BiVXaK.png)
 
-![2021-06-26_22-29-16.png](https://i.loli.net/2021/07/11/N8L7qRwxElK94Je.png)
+![](https://i.loli.net/2021/07/11/N8L7qRwxElK94Je.png)
 
 
 

@@ -111,7 +111,7 @@ steghide extract -sf irked.jpg
 find / -perm -u=s -type f 2>/dev/null -exec ls -l {} \;
 ```
 
-发现个可疑的`viewuser`命令，执行该命令报错提示找不到`/tmp/listusers`，嗯，这里利用一波，在/tmp下创建一个名为`listusers`的sh脚本。脚本里面可以写入增加个特权用户、修改root密码或者把当前用户加入到管理员组之类的命令
+发现个可疑的`viewuser`命令，执行该命令报错提示找不到`/tmp/listusers`，嗯，这里利用在/tmp下创建一个名为`listusers`的sh脚本。脚本里面可以写入增加个特权用户、修改root密码或者把当前用户加入到管理员组之类的命令
 
 ![](https://ae01.alicdn.com/kf/HTB1OH5daxiH3KVjSZPf760BiVXaU.png)
 

