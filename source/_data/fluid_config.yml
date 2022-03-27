@@ -18,19 +18,18 @@
 
 # 用于浏览器标签的图标
 # Icon for browser tab
-#favicon: /img/favicon.png
+favicon: /favicons/favicon.ico
 
 # 用于苹果设备的图标
 # Icon for Apple touch
 #apple_touch_icon: /img/favicon.png
-favicon: /favicons/favicon.ico
-apple_touch_icon: /favicons/apple-touch-icon.png
-android_chrome_large: /favicons/android-chrome-192x192.png
-medium: /favicons/favicon-32x32.png
-small: /favicons/favicon-16x16.png
-safari_pinned_tab: /favicons/safari-pinned-tab.svg
-android_manifest: /favicons/site.webmanifest
-ms_browserconfig: /favicons/browserconfig.xml
+apple_touch_icon: /favicons/tool-logo.png
+android_chrome_large: /favicons/tool-logo.png
+medium: /favicons/tool-logo.png
+small: /favicons/tool-logo.png
+safari_pinned_tab: /favicons/tool-logo.svg
+android_manifest: /favicons/tool-logo.svg
+ms_browserconfig: /favicons/tool-logo.xml
 fallback: /favicons/favicon.ico
 
 # 浏览器标签页中的标题分隔符，效果： 文章名 - 站点名
