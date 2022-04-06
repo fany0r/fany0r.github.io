@@ -1,7 +1,7 @@
 ---
 title: Apache Log4j2 RCE漏洞复现
 tags:
-  - log4j
+  - log4j2
   - CVE-2021-44228
 copyright: true
 categories:
