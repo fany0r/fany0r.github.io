@@ -121,17 +121,17 @@ xxd -i encmeter.bin > encmeter.txt
 
 把转换后的encmeter.txt内容放进带代码中，编译生成。详情见 https://www.bilibili.com/video/BV1yT4y1Z7HW
 
-![image-20211203000135086](https://z3.ax1x.com/2021/12/03/oULSeg.png)
+![](https://z3.ax1x.com/2021/12/03/oULSeg.png)
 
 效果：
 
 Defender、某绒、某数字无感知直接上线并执行命令。据说国内杀软都可以过，这个没去一个个试就不清楚了。
 
-![image-20211203000443902](https://z3.ax1x.com/2021/12/03/oULPFs.png)
+![](https://z3.ax1x.com/2021/12/03/oULPFs.png)
 
 卡巴，不出意外，上线后瞬间就被干掉了....... 
 
-![image-20211203001113890](https://z3.ax1x.com/2021/12/03/oULpwQ.png)
+![](https://z3.ax1x.com/2021/12/03/oULpwQ.png)
 
 CS加上C2配置
 
@@ -205,11 +205,11 @@ http-post {
 
 然后简单改改特征，如增加资源图标、属性信息之类。
 
-![image-20211203002221312](https://z3.ax1x.com/2021/12/03/oUL9oj.png)
+![](https://z3.ax1x.com/2021/12/03/oUL9oj.png)
 
 tasklist /svc
 
-![image-20211203003409065](https://z3.ax1x.com/2021/12/03/oUqxOS.png)
+![](https://z3.ax1x.com/2021/12/03/oUqxOS.png)
 
 
 

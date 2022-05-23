@@ -22,7 +22,7 @@ fofa  `title="锐捷网络-EWEB网管系统"` 或者 `icon_hash="-692947551"`
 
 登录页面这样子：
 
-![img](https://z3.ax1x.com/2021/07/13/WFHRZ8.png)
+![](https://z3.ax1x.com/2021/07/13/WFHRZ8.png)
 
 出现漏洞的文件在 `/guest_auth/guestIsUp.php`
 
@@ -47,7 +47,7 @@ fofa  `title="锐捷网络-EWEB网管系统"` 或者 `icon_hash="-692947551"`
 
 可以通过命令拼接的方式构造命令执行，如：`ip=127.0.01 | cat /etc/passwd`
 
-![img](https://z3.ax1x.com/2021/07/13/WFHWdS.png)
+![](https://z3.ax1x.com/2021/07/13/WFHWdS.png)
 
 Reference
 

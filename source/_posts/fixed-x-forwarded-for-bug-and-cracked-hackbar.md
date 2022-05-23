@@ -46,7 +46,7 @@ Firefox下x_forwarded_for无法保存设置好的headers
 
 提取 插件并解压，然后编辑 `theme\js\hackbar-panel.js`
 
-注释 21~25行
+注释 21-25行
 
 ```js
 function disable_hackbar(message=null) {

@@ -13,17 +13,17 @@ tags:
 
 某天，Leader随手甩了个目标，要对某课堂做测试。我xxx****，又是个开头登录页面的“破站”。
 
-![image-20210405234326102](https://z3.ax1x.com/2021/07/11/WCNR4x.png)
+![](https://z3.ax1x.com/2021/07/11/WCNR4x.png)
 
 没有验证码，祭出Burp Suite爆之！
 
 然而，然而，password字段居然是加密的，现在开发的安全意识都这么“高”了吗？
 
-![image-20210406234529785](https://z3.ax1x.com/2021/07/11/WCN4gO.png)
+![](https://z3.ax1x.com/2021/07/11/WCN4gO.png)
 
 不想测这破站，只想摸鱼领个底薪，不测了，破站扔一边去.......
 
-![image-20210406235105275](https://z3.ax1x.com/2021/07/11/WCNh8K.png)
+![](https://z3.ax1x.com/2021/07/11/WCNh8K.png)
 
 几天后.......
 
@@ -31,7 +31,7 @@ tags:
 >		
 >	Me：额，快好了，正在整理报告了，稍后发。
 
-![image-20210407001057926](https://z3.ax1x.com/2021/07/11/WCNoKe.png)
+![](https://z3.ax1x.com/2021/07/11/WCNoKe.png)
 
 
 再度打开burpsuite重新看看那破站了，唉......
@@ -42,7 +42,7 @@ tags:
 
 加密函数：
 
-![image-20210405234444876](https://z3.ax1x.com/2021/07/11/WCN2U1.png)
+![](https://z3.ax1x.com/2021/07/11/WCN2U1.png)
 
 #### 下载 实现加密的js脚本到本地
 
@@ -60,7 +60,7 @@ https://maven.apache.org/download.cgi
 mvn clean package -DskipTests
 ```
 
-![image-20210406001927535](https://z3.ax1x.com/2021/07/11/WCNgER.png)
+![](https://z3.ax1x.com/2021/07/11/WCNgER.png)
 
 编译完后加载到Burp Suite中。
 
@@ -94,7 +94,7 @@ function js_encrypt(payload){
 ..............
 ```
 
-![image-20210405235300901](https://z3.ax1x.com/2021/07/11/WCN5vD.png)
+![](https://z3.ax1x.com/2021/07/11/WCN5vD.png)
 
 #### 下载phantomJS并运行脚本
 
@@ -108,11 +108,11 @@ phantomJS.exe jsEncrypter_rsa.js
 
 删除 Cookie 字段，关联扩展jsEncrypter：
 
-![image-20210406002807685](https://z3.ax1x.com/2021/07/11/WCN6b9.png)
+![](https://z3.ax1x.com/2021/07/11/WCN6b9.png)
 
 整理报告，交差~
 
-![image-20210406003542562](https://z3.ax1x.com/2021/07/11/WCNTDH.png)
+![](https://z3.ax1x.com/2021/07/11/WCNTDH.png)
 
 
 

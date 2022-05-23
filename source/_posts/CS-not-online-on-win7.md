@@ -18,7 +18,7 @@ tags:
 
 1、生成Windows分阶段Payload，打开exe会提示”xxx程序已停止“
 
-![image-20220417001004955](https://s1.ax1x.com/2022/04/17/LNUTfO.png)
+![](https://s1.ax1x.com/2022/04/17/LNUTfO.png)
 
 2、Windows无阶段Payload，打开就只是打开了，没任何反应也无法上线。
 
@@ -26,15 +26,15 @@ tags:
 
 wireshark 监控看看，走的是 TLSv1.2？
 
-![image-20220417010256478](https://s1.ax1x.com/2022/04/17/LNUb1e.png)
+![](https://s1.ax1x.com/2022/04/17/LNUb1e.png)
 
-默认情况下windows 7并不支持..... 
+从微软官方文档得知默认情况下windows 7并不支持，需要修改注册表手动开启支持 TLS 1.1和1.2...... 
 
-可通过修改注册表手动开启支持 TLS 1.1和1.2...... 但实战中不可能这么操作的。
+但实战中不可能这么操作的。
 
 https://support.microsoft.com/zh-cn/topic/%E6%9B%B4%E6%96%B0%E4%BA%86-%E4%BB%A5%E5%9C%A8-windows-%E4%B8%AD%E7%9A%84-winhttp-%E4%B8%AD%E5%90%AF%E7%94%A8-tls-1-1-%E5%92%8C-tls-1-2-%E4%BD%9C%E4%B8%BA%E9%BB%98%E8%AE%A4%E5%AE%89%E5%85%A8%E5%8D%8F%E8%AE%AE-c4bd73d2-31d7-761e-0178-11268bb10392
 
-![image-20220417011048687](https://s1.ax1x.com/2022/04/17/LNUHpD.png)
+![](https://s1.ax1x.com/2022/04/17/LNUHpD.png)
 
 其实，使用哪种通信协议版本是由服务端（CS）决定的，CS是用java运行的，那是否可以通过修改java默认TLS协议版本从而解决问题呢？
 
@@ -53,11 +53,11 @@ jre1.8.0_xxx\lib\security\java.security
 jdk-11.xxx\conf\security\java.security
 ```
 
-Linux 为 ：`$JAVA_HOME/lib/security/java.security`
+Linux 为 ：`/etc/java-11-openjdk/security/java.security`
 
 `C:\Program Files\Java\jdk-11.0.13\conf\security\java.security`
 
-![image-20220330150713146](https://s1.ax1x.com/2022/04/17/LNUotK.png)
+![](https://s1.ax1x.com/2022/04/17/LNUotK.png)
 
 把 `SSLv3, TLSv1, TLSv1.1` ,删除，重新运行CS服务端即可。
 

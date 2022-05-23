@@ -15,7 +15,7 @@ date: 2019-01-19 23:40:16
 
 这几天即刻群里的师傅们都讨论PHP shell如何改装从而存活下来，由于自己太菜只能，默默的听大佬们讨论不敢吱声 ~ Orz
 听大佬们讨论，什么用`fopen`加载txt里php，`xor`Str 然后组合之类，听得我一脸懵逼的 0.0  特别是`xor`,完全不知道那是什么，去查了下php的手册，看完后对于php烂成没模样的我来说更加懵逼了~
-后面在九世表哥的Blog翻到一篇 [**No character shell study**](https://422926799.github.io/2019/01/18/No-character-shell-study/) 
+后面在九世的Blog翻到一篇 [**No character shell study**](https://422926799.github.io/2019/01/18/No-character-shell-study/) 
 
 ![](https://ae01.alicdn.com/kf/HTB1qSShaEuF3KVjSZK9q6zVtXXay.jpg)
 
