@@ -13,7 +13,7 @@ date: 2020-06-26 13:51:49
 ---
 
 
-删除或注释 `win-install.cmd` line 9~23
+删除或注释 `win-install.cmd` line 9-23
 
 ```bash
 chcp 850
@@ -47,7 +47,7 @@ python3 unlocker.py
 python3 gettools.py
 ```
 
-在line 29~line 32中的VMware服务名字是错误的，需要修改正确服务名并加上双引号
+在line 29-32line中的VMware服务名字是错误的，需要修改正确服务名并加上双引号。
 
 ```bash
 net stop "VMwareHostd" > NUL 2>&1
@@ -57,7 +57,7 @@ net stop "VMUSBArbService" > NUL 2>&1
 net stop "VMware NAT Service" > NUL 2>&1
 ```
 
-修改line 57~line 60：
+修改line 57-line 60：
 
 ```bash
 net start "VMware NAT Service" > NUL 2>&1
@@ -140,6 +140,7 @@ popd
 echo.
 echo Finished!
 pause
+
 ```
 
 管理员权限运行 `win-install.cmd` 破解VMware

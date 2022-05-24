@@ -30,7 +30,7 @@ http://xxx.xxx.xxx.xxx/audit/gui_detail_view.php?token=1&id=%5C&uid=%2Cchr(97))%
 
 审计员：
 
-![img](https://z3.ax1x.com/2021/07/13/WF7zKP.png)
+![](https://z3.ax1x.com/2021/07/13/WF7zKP.png)
 
 
 

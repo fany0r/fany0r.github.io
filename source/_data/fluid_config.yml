@@ -299,7 +299,7 @@ iconfont: //at.alicdn.com/t/font_1736178_kmeydafke9r.css
 navbar:
   # 导航栏左侧的标题，为空则按 hexo config 中 `title` 显示
   # The title on the left side of the navigation bar. If empty, it is based on `title` in hexo config
-  blog_title: "InfoSec learning"
+  blog_title: "InfoSec's Blog"
 
   # 导航栏毛玻璃特效，实验性功能，可能会造成页面滚动掉帧和抖动，部分浏览器不支持会自动不生效
   # Navigation bar frosted glass special animation. It is an experimental feature
@@ -396,9 +396,11 @@ footer:
   # 页脚第一行文字的 HTML，建议保留 Fluid 的链接，用于向更多人推广本主题
   # HTML of the first line of the footer, it is recommended to keep the Fluid link to promote this theme to more people
   content: '
-    <a rel="nofollow noopener"><span>guosec</span></a>
+    <!--<a rel="nofollow noopener"><span>Copyright</span></a>-->
+    <i class="iconfont">Copyright </i>
     <i class="iconfont icon-copyright"></i>
-    <a rel="nofollow noopener"><span>2022</span></a>
+    <i class="iconfont"> 2022 InfoSec</i>
+    <!--<a rel="nofollow noopener"><span>2022 Guosec</span></a>-->
   '
 
   # 展示网站的 PV、UV 统计数
@@ -989,7 +991,7 @@ links:
       avatar: "/img/links/yiwlny.png"
     }
     - {
-      title: "cai师傅",
+      title: "manmachines",
       intro: "",
       link: "https://manmachines.github.io",
       avatar: "img/links/蔡师傅.jpg"

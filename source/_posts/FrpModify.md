@@ -13,7 +13,7 @@ tags:
 ---
 
 
-### 前置环境
+### 环境
 
 ​	Platform：Kali Linux
 
@@ -46,7 +46,7 @@ func main() {
 }
 ```
 
-![image-20210511003701463](https://z3.ax1x.com/2021/05/14/grFv7D.png)
+![](https://z3.ax1x.com/2021/05/14/grFv7D.png)
 
 ### 修改tls协议默认特征
 
@@ -122,7 +122,9 @@ const (
 
 `pkg/msg/ctl.go`
 
-​	注：感觉原文 https://www.notion.so/FRP-d3673da19ec74a8781c020bbea883fa2 这部分的代码没给全，编译后的frp使用有问题，连接不了......   **后面还是得用原来的，不做修改。**
+​	注：感觉原文 https://www.notion.so/FRP-d3673da19ec74a8781c020bbea883fa2 
+
+这部分的代码没给全，编译后的frp使用有问题，连接不了......   **后面还是得用原来的，不做修改。**
 
 ```go
 package msg
@@ -346,7 +348,7 @@ use_encryption = true
 
 #### 改`status.go`
 
-​	注释 41~45行，把 `fileContent`赋值给`iniContent` ，注意要转为`byte`
+​	注释 41-45行，把 `fileContent`赋值给`iniContent` ，注意要转为`byte`
 
 ```go
 var statusCmd = &cobra.Command{
@@ -371,7 +373,7 @@ var statusCmd = &cobra.Command{
 
 #### 改`reload.go`
 
-注释 37~41行，把 `fileContent`赋值给`iniContent` ，注意要转为`byte`
+注释 37-41行，把 `fileContent`赋值给`iniContent` ，注意要转为`byte`
 
 ```go
 var reloadCmd = &cobra.Command{
@@ -556,9 +558,15 @@ eemm，压缩后确实加大查杀率了......
 
 ​	1为不压缩、5为upx压缩、4为压缩+改标识
 
+<<<<<<< HEAD
 ![(https://z3.ax1x.com/2021/05/14/grktN4.png)
+=======
+![](https://z3.ax1x.com/2021/05/14/grktN4.png)
+>>>>>>> b4f60583b73bf2d87d768d31eaddf72c8fada1eb
 
 ### 试验
+
+就不捉流量看指纹了，直接测试修改后是否正常可用。
 
 linu to Linux
 

@@ -28,11 +28,11 @@ date: 2020-06-13 13:14:03
 
 首先先把xray反连平台设置好，将listen_ip修改为本地ip。
 
-![image.png](https://s1.ax1x.com/2020/06/13/tjOMDO.png)
+![](https://s1.ax1x.com/2020/06/13/tjOMDO.png)
 
 ### 把当前xray所有的文件都复制到另一个xray2文件
 
-![image.png](https://s1.ax1x.com/2020/06/13/tjOmgx.png)
+![](https://s1.ax1x.com/2020/06/13/tjOmgx.png)
 
 ### 启动反连平台的xray
 
@@ -40,7 +40,7 @@ date: 2020-06-13 13:14:03
 xray_windows_amd64.exe reverse
 ```
 
-![image.png](https://s1.ax1x.com/2020/06/13/tjOnv6.png)
+![](https://s1.ax1x.com/2020/06/13/tjOnv6.png)
 
 ### 接着再启动批量扫描的xray
 
@@ -48,7 +48,7 @@ xray_windows_amd64.exe reverse
 xray_windows_amd64.exe webscan --plugins fastjson --url-file url.txt --html-output test1.html
 ```
 
-![image.png](https://s1.ax1x.com/2020/06/13/tjOKKK.png)
+![](https://s1.ax1x.com/2020/06/13/tjOKKK.png)
 
 ### OK,扫描完成
 

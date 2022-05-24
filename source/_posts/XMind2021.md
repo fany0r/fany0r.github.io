@@ -22,7 +22,7 @@ date: 2021-10-17 20:04:20
 
 双击安装包，默认自动安装在：`C:\Program Files\XMind`，并且会自动启动该软件，先关闭软件。
 
-![image-20211010225711552](https://z3.ax1x.com/2021/10/17/5tgY5t.png)
+![](https://z3.ax1x.com/2021/10/17/5tgY5t.png)
 
 下载【app.asar】 https://wws.lanzoui.com/ikPtev6y8ba 密码:1mo5
 
@@ -32,7 +32,7 @@ date: 2021-10-17 20:04:20
 
 方法一、新建系统变量VANA_LICENSE_TO，VANA_LICENSE_MODE，直接打开XMind。
 
-![image-20211017204839998](https://z3.ax1x.com/2021/10/17/5tgJUI.png)
+![](https://z3.ax1x.com/2021/10/17/5tgJUI.png)
 
 方法二、新建 如下文件两个文件保存到XMind安装目录下 `C:\Program Files\XMind\`
 
@@ -55,11 +55,11 @@ CreateObject("WScript.Shell").Run """C:\Program Files\XMind\XmindFull.cmd""",0
 
 双击[XMind.vbs]正常启动XMind。如提示输入激活码，选择跳过即可。
 
-![image-20211010234318257](https://z3.ax1x.com/2021/10/17/5tgNPP.png)
+![](https://z3.ax1x.com/2021/10/17/5tgNPP.png)
 
 创建快捷方式，XMind.vbs放到桌面，修改图标。
 
-![image-20211010235304602](https://z3.ax1x.com/2021/10/17/5tgU8f.png)
+![](https://z3.ax1x.com/2021/10/17/5tgU8f.png)
 
 经测试，所有导出功能均正常(前提是打印服务处于运行状态，非运行状态使用导出功能XMind会卡死无反应)。
 
