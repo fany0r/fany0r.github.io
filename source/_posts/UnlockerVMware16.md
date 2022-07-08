@@ -1,21 +1,20 @@
 ---
 title: VMware Workstation 16 解锁安装 macOS
-date: 2022-07-03 15:42:17
 tags:
   - Cracked
 categories:
   - 资源分享
 copyright: true
-index_img: https://s1.ax1x.com/2020/06/27/N6gz9g.md.png
-banner_img: https://s1.ax1x.com/2020/06/27/N6gz9g.md.png
+index_img: 'https://s1.ax1x.com/2020/06/27/N6gz9g.md.png'
+banner_img: 'https://s1.ax1x.com/2020/06/27/N6gz9g.md.png'
+abbrlink: b48cad46
+date: 2022-07-03 15:42:17
 ---
 
 
 适用 VMware Workstation 11-16、 Player 7-16，理论上 Windows/Linux/Mac都可用。
 
 以下只对Windows下的VMware做了修改，Linux和Mac自测。
-
-完整UnlockerVMware16脚本包：https://wwp.lanzouy.com/ieZZz07axacd
 
 
 win-install.cmd
@@ -570,7 +569,9 @@ if __name__ == '__main__':
 
 ```
 
-在同目录创建 tools 文件夹，然后下载 vmware tools包，保存到tools目录下。
+完整UnlockerVMware16脚本包：https://wwp.lanzouy.com/ieZZz07axacd 下载解压。
+
+在win-install.cmd同级目录下创建 tools 文件夹，然后下载 vmware tools包，保存到tools目录下。
 
 下载地址，官网很慢 [com.vmware.fusion.zip.tar](https://softwareupdate.vmware.com/cds/vmw-desktop/fusion/12.2.3/19436697/x86/core/com.vmware.fusion.zip.tar) 
 
