@@ -1,11 +1,14 @@
 ---
 title: BumbleBee-此大黄蜂非擎天柱的里大黄蜂但它仍然在变形
-date: 2022-08-20 21:10:44
-tags:
 categories:
   - 转载搬运
-index_img: https://rmt.ladydaily.com/fetch/fluid/storage/hexo-static/cover.jpg?w=480&fmt=webp
-banner_img: https://rmt.ladydaily.com/fetch/fluid/storage/hexo-static/cover.jpg?w=480&fmt=webp
+index_img: >-
+  https://rmt.ladydaily.com/fetch/fluid/storage/hexo-static/cover.jpg?w=480&fmt=webp
+banner_img: >-
+  https://rmt.ladydaily.com/fetch/fluid/storage/hexo-static/cover.jpg?w=480&fmt=webp
+abbrlink: de71e52e
+date: 2022-08-20 21:10:44
+tags:
 ---
 
 此大黄蜂非擎天柱的里大黄蜂但它仍然在变形
@@ -107,7 +110,7 @@ Proofpoint 将此活动归因于 TA578，这是 Proofpoint 研究人员自 2020 
 
 ​	BazaLoader 是 2020 年首次发现的第一阶段下载器，与包括 [Conti](https://thedfirreport.com/2021/10/04/bazarloader-and-the-conti-leaks/) 在内的后续勒索软件活动有关。  Proofpoint 研究人员最初监测到 BazaLoader 由主要有传播 Trick 银行木马的威胁行为者大量传播。
 
-![BazaLoader 和 Bumblebee 精选活动的时间表](https://www.proofpoint.com/sites/default/files/inline-images/image-20220428121656-1.png)
+![BazaLoader 和 Bumblebee 精选活动的时间表](https://s3.bmp.ovh/imgs/2022/08/20/92a5d907766d31d2.png)
 
 ​	BazaLoader 从网络犯罪威胁领域的明显消失恰逢 Conti Leaks 发生的时间，2022 年 2 月末，一名有权访问 Conti 内部操作的乌克兰研究人员开始从网络犯罪组织泄露数据。  在泄露的文件中发现了与 BazaLoader 相关的基础设施。
 
@@ -162,7 +165,7 @@ Ins 命令通过将 Bumblebee DLL 复制到 `%APPDATA%` 文件夹的子目录并
 
 Dex 命令是支持的命令中最基本命令，该命令从服务器响应中获取 base64 解码的内容，以硬编码路径将其写入磁盘并通过 COM 对象执行。
 
-![Dex命令输出](https://www.proofpoint.com/sites/default/files/inline-images/image-20220427171513-20.png)
+![Dex命令输出](https://s3.bmp.ovh/imgs/2022/08/20/895554bb6f668058.png)
 
 ### Dij 命令
 
@@ -222,17 +225,17 @@ Proofpoint 表示，在2022年4月19 日观察到的最新版本 BumbleBee 中�
 
 该恶意软件最明显的变化是在网络通信中增加了一个加密层，开发人员通过RC4硬编码密钥添加到样本中，用于加密请求和解密响应。
 
-![加密请求内容](https://www.proofpoint.com/sites/default/files/inline-images/image-20220427171513-34.png)
+![加密请求内容](https://s3.bmp.ovh/imgs/2022/08/20/67da4f2856ce534f.png)
 
-![解密响应内容](https://www.proofpoint.com/sites/default/files/inline-images/image-20220427171513-35.png)
+![解密响应内容](https://s3.bmp.ovh/imgs/2022/08/20/014ade3c194d2c5b.png)
 
 作为该组织的另一个标志，展示了他们快速的开发速度，4月22日，Proofpoint 监测到该组织向 BumbleBee 添加了一个新线程，该线程根据恶意软件分析师使用的常用工具的硬编码列表来检查当前正在运行的进程，该线程在 BumbleBee 进程开始时创建。
 
-![Bumblebee 主函数显示新线程的开始](https://www.proofpoint.com/sites/default/files/inline-images/image-20220427171513-36.png)
+![Bumblebee 主函数显示新线程的开始](https://s3.bmp.ovh/imgs/2022/08/20/528dc025cc56c9c2.png)
 
 如果找到这些进程中的任何一个，该函数将返回 1，这会触发 BumbleBee 主线程终止。
 
-![BumBleBee检查工具列表](https://www.proofpoint.com/sites/default/files/inline-images/image-20220427171513-37.png)
+![BumBleBee检查工具列表](https://s1.328888.xyz/2022/08/20/B7m2w.png)
 
 ## 结论
 
