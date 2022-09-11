@@ -1,12 +1,13 @@
 ---
 title: 记一次炫龙毁灭者DD2换屏&更新BIOS过程
-date: 2022-08-18 22:51:56
-tags:
 categories:
   - 杂项
 index_img: 'https://s1.ax1x.com/2022/09/04/vT3o4K.jpg'
 banner_img: 'https://s1.ax1x.com/2022/09/04/vT3o4K.jpg'
 copyright: true
+abbrlink: 843d207e
+date: 2022-08-18 22:51:56
+tags:
 ---
 
 
@@ -24,7 +25,7 @@ copyright: true
 
 ### 0x02 拆机
 
-​	主要注意的就是需要拆掉键盘后卸掉6个螺丝才能拆整个D面最终才可拆换屏线，换屏线前最好是把C壳拆掉旧屏幕拿出来，其他的没什么好说的，有手就行。可以参考：[小秋搞机炫龙毁灭者DD2 DC2 NB50TK1拆机视频](https://v.qq.com/x/page/v0702wv90md.html)
+​	主要注意的就是需要拆掉键盘后卸掉6个螺丝才能拆整个D面最终才可拆换屏线，换屏线前最好是把B壳拆掉旧屏幕拿出来，其他的没什么好说的，有手就行。可以参考：[小秋搞机炫龙毁灭者DD2 DC2 NB50TK1拆机视频](https://v.qq.com/x/page/v0702wv90md.html)
 
 ![拆开整个D壳后](https://s1.ax1x.com/2022/09/04/vT3Y9S.png)
 
