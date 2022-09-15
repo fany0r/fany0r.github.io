@@ -1,5 +1,5 @@
 ---
-title: 修改Cobalt Strikex小记
+title: 修改Cobalt Strike小记
 abbrlink: '324e2628'
 date: 2022-04-15 1:51:37
 tags:
