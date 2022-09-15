@@ -13,7 +13,7 @@ tags:
 
 ​	WebRTC 是一项实时通讯技术，它允许网络应用或者站点，在不借助中间媒介的情况下，建立浏览器之间点对点的连接，实现视频流和（或）音频流或者其他任意数据的传输。WebRTC 包含的这些标准使用户在无需安装任何插件或者第三方的软件的情况下，创建点对点的数据分享和电话会议成为可能。
 
-​	简而言之这玩意主要是支持网络视频/会议等飞速流畅不卡顿的，但同时也会暴露所处本地内网IP、代理后面的真实IP。挂`VPN`不影响(前提是该VPN可靠)，获取回到IP也只是VPN服务商那边的IP。iPhone（IOS15.5+）不受影响。
+​	简而言之这玩意主要是支持网络视频/会议等流畅不卡顿的，但同时也会暴露所处本地内网IP、代理后面的真实IP。挂`VPN`不影响(注意是真vpn模式且VPN可靠)，获取到的IP也只是VPN服务商那边的IP。iPhone（IOS14+）不受影响。
 
 测试站点：
 
@@ -43,7 +43,7 @@ https://chrome.google.com/webstore/detail/webrtc-leak-prevent/eiadekoaikejlgdbkb
 
 #### 油猴(Tampermonkey)脚本
 
-如下脚本适用PC端和手机端（via/Alook浏览器），即支持运行自定义js脚本的浏览器皆适用。
+如下脚本适用PC端和手机端（via/Alook浏览器等），即支持运行自定义js脚本的浏览器皆适用。
 
 ```javascript
 // ==UserScript==
