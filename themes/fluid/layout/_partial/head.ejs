@@ -23,12 +23,15 @@ if (page.description) {
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <% } %>
   <meta name="theme-color" content="<%= theme.color.navbar_bg_color %>">
-  <meta name="description" content="<%= description %>">
   <meta name="author" content="<%= page.author || config.author %>">
   <meta name="keywords" content="<%= keywords %>">
   <meta name="msvalidate.01" content="<%= config.site_verification.bing %>" />
   <meta name="google-site-verification" content="<%= config.site_verification.google %>" />
-  <%- open_graph(theme.open_graph || {}) %>
+  <% if (theme.open_graph.enable) { %>
+    <%- open_graph(theme.open_graph || {}) %>
+  <% } else { %>
+    <meta name="description" content="<%= description %>">
+  <% } %>
   <% if (theme.custom_head) { %>
     <%- theme.custom_head %>
   <% } %>
