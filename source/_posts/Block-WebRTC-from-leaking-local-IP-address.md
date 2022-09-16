@@ -1,9 +1,7 @@
 ---
-title: Block WebRTC from leaking local IPaddress
-index_img: >-
-  https://rmt.ladydaily.com/fetch/fluid/storage/hexo-static/cover.jpg?w=480&fmt=webp
-banner_img: >-
-  https://rmt.ladydaily.com/fetch/fluid/storage/hexo-static/cover.jpg?w=480&fmt=webp
+title: 阻止 WebRTC 泄露本地/真实 IP
+index_img: https://s1.ax1x.com/2022/09/16/vz5XnJ.png
+banner_img: https://s1.ax1x.com/2022/09/16/vz5XnJ.png
 copyright: true
 abbrlink: ee0c8274
 date: 2022-09-08 19:16:33

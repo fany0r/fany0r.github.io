@@ -4,8 +4,8 @@ copyright: true
 categories:
   - 技术水文
 abbrlink: 7954ef6a
-index_img: https://z3.ax1x.com/2021/12/03/oUqxOS.png
-banner_img: https://z3.ax1x.com/2021/12/03/oUqxOS.png
+index_img: https://s1.ax1x.com/2022/09/16/vz5ZWT.png
+banner_img: https://s1.ax1x.com/2022/09/16/vz5ZWT.png
 date: 2021-12-03 13:36:22
 tags:
 ---

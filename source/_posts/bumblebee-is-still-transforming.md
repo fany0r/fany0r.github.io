@@ -1,11 +1,9 @@
 ---
-title: BumbleBee-此大黄蜂非擎天柱的里大黄蜂但它仍然在变形
+title: BumbleBee-大黄蜂
 categories:
   - 转载搬运
-index_img: >-
-  https://rmt.ladydaily.com/fetch/fluid/storage/hexo-static/cover.jpg?w=480&fmt=webp
-banner_img: >-
-  https://rmt.ladydaily.com/fetch/fluid/storage/hexo-static/cover.jpg?w=480&fmt=webp
+index_img: https://rmt.ladydaily.com/fetch/fluid/storage/hexo-static/cover.jpg?w=480&fmt=webp
+banner_img: https://rmt.ladydaily.com/fetch/fluid/storage/hexo-static/cover.jpg?w=480&fmt=webp
 abbrlink: de71e52e
 date: 2022-08-20 21:10:44
 tags:

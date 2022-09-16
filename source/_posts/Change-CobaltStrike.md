@@ -4,8 +4,8 @@ abbrlink: '324e2628'
 date: 2022-04-15 1:51:37
 tags:
 copyright: true
-index_img: https://rmt.ladydaily.com/fetch/fluid/storage/hexo-static/cover.jpg?w=480&fmt=webp
-banner_img: https://rmt.ladydaily.com/fetch/fluid/storage/hexo-static/cover.jpg?w=480&fmt=webp
+index_img: https://s1.ax1x.com/2022/09/16/vz5ZWT.png
+banner_img: https://s1.ax1x.com/2022/09/16/vz5ZWT.png
 ---
 
 
