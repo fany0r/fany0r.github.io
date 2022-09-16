@@ -15,18 +15,18 @@ date: 2019-01-19 23:40:16
 
 这几天即刻群里的师傅们都讨论PHP shell如何改装从而存活下来，由于自己太菜只能，默默的听大佬们讨论不敢吱声 ~ Orz
 听大佬们讨论，什么用`fopen`加载txt里php，`xor`Str 然后组合之类，听得我一脸懵逼的 0.0  特别是`xor`,完全不知道那是什么，去查了下php的手册，看完后对于php烂成没模样的我来说更加懵逼了~
-<<<<<<< HEAD
+
 后面在九世师傅的Blog翻到一篇 [**No character shell study**](https://422926799.github.io/2019/01/18/No-character-shell-study/) 
-=======
+
 后面在九世的Blog翻到一篇 [**No character shell study**](https://422926799.github.io/2019/01/18/No-character-shell-study/) 
->>>>>>> b4f60583b73bf2d87d768d31eaddf72c8fada1eb
+
 
 ![](https://ae01.alicdn.com/kf/HTB1qSShaEuF3KVjSZK9q6zVtXXay.jpg)
 
 >异或运算是指，取每个字符的ASCII，转成二进制再做运算，运二进制算结果转成ASCII，然后再转成字符串
 
 看到这个，才算数明白了些。但是，怎么知道哪些字符串进行异或运算后会得到我想要的新的字符串呢？于是Google了一波，找到了【通过查ASCII表的符合和字符的异或，打印出所有可能的组合】的py脚本，把轮子扣下来小小修改了一下，唔，very good，这就是我想要的。
-<!--more-->
+
 代码如下：
 
 ```python

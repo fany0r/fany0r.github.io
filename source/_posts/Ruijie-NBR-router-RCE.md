@@ -51,5 +51,5 @@ fofa  `title="锐捷网络-EWEB网管系统"` 或者 `icon_hash="-692947551"`
 
 Reference
 
-http://wiki.peiqi.tech/PeiQi_Wiki/%E7%BD%91%E7%BB%9C%E8%AE%BE%E5%A4%87%E6%BC%8F%E6%B4%9E/%E9%94%90%E6%8D%B7/%E9%94%90%E6%8D%B7NBR%E8%B7%AF%E7%94%B1%E5%99%A8%20EWEB%E7%BD%91%E7%AE%A1%E7%B3%BB%E7%BB%9F%20%E8%BF%9C%E7%A8%8B%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%20CNVD-2021-09650.html
+http://wiki.peiqi.tech/PeiQi_Wiki/网络设备漏洞/锐捷/锐捷NBR路由器%320EWEB网管系统%20远程命令执行漏洞%20CNVD-2021-09650.html
 

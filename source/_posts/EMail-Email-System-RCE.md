@@ -137,5 +137,5 @@ if __name__ == '__main__':
 
 Reference
 
-http://wiki.peiqi.tech/PeiQi_Wiki/Web%E5%BA%94%E7%94%A8%E6%BC%8F%E6%B4%9E/%E4%BA%BF%E9%82%AE/%E4%BA%BF%E9%82%AE%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6%E7%B3%BB%E7%BB%9F%20%E8%BF%9C%E7%A8%8B%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E.html
+http://wiki.peiqi.tech/PeiQi_Wiki/Web应用漏洞/亿邮/亿邮电子邮件系统远程命令执行漏洞.html
 

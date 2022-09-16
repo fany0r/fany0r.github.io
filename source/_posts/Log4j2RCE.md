@@ -88,11 +88,10 @@ public class HelloSlf4j {
 
 重新加载i项目/生成源代码并更新文件，运行：calc
 
-<<<<<<< HEAD
+
 ![](https://s1.ax1x.com/2021/12/10/ooEx9H.png)
-=======
+
 !](https://s1.ax1x.com/2021/12/10/ooEx9H.png)
->>>>>>> b4f60583b73bf2d87d768d31eaddf72c8fada1eb
 
 高版本jdk需要开启 jndi
 

@@ -70,7 +70,7 @@ curl http://x.x.x.x:9080/QeMpHt -H "cmd: ifconfig"
 
 使用poython提交数据、执行命令。 
 
-py脚本: https://github.com/Kuibagit/CVE-2021-45232-RCE
+py脚本: [GitHub](https://github.com/Kuibagit/CVE-2021-45232-RCE)
 
 ![](https://s1.ax1x.com/2022/05/23/XpDK2R.png)
 

@@ -19,11 +19,11 @@ date: 2021-10-01 13:21:28
 
 CentOS 7
 
-omi v1.6.8-0 (https://github.com/microsoft/omi/releases)
+[omi v1.6.8-0](https://github.com/microsoft/omi/releases)
 
 ​	`omi-1.6.8-0.ssl_110.ulinux.x64.deb`
 
-SCXcore（https://github.com/microsoft/SCXcore/releases）
+[SCXcore]https://github.com/microsoft/SCXcore/releases）
 
 ​	`scx-1.6.6-0.ssl_110.universal.x64.deb`
 

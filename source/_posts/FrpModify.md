@@ -558,11 +558,10 @@ eemm，压缩后确实加大查杀率了......
 
 ​	1为不压缩、5为upx压缩、4为压缩+改标识
 
-<<<<<<< HEAD
+
 ![(https://z3.ax1x.com/2021/05/14/grktN4.png)
 =======
 ![](https://z3.ax1x.com/2021/05/14/grktN4.png)
->>>>>>> b4f60583b73bf2d87d768d31eaddf72c8fada1eb
 
 ### 试验
 
@@ -584,11 +583,8 @@ https://www.notion.so/FRP-d3673da19ec74a8781c020bbea883fa2
 
 https://www.cnblogs.com/cwkiller/p/14108589.html
 
-https://uknowsec.cn/posts/notes/FRP%E6%94%B9%E9%80%A0%E8%AE%A1%E5%88%92.html
+https://uknowsec.cn/posts/notes/FRP改造计划.html
 
 https://github.com/fatedier/frp/pull/1919/files
 
-https://uknowsec.cn/posts/notes/FRP%E6%94%B9%E9%80%A0%E8%AE%A1%E5%88%92.html 
-
-
-
+https://uknowsec.cn/posts/notes/FRP改造计划续.html

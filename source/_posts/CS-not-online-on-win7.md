@@ -24,7 +24,7 @@ tags:
 
 ### 0x02 问题分析
 
-wireshark 监控看看，走的是 TLSv1.2？
+wireshark 监控看看，走的是 TLSv1.2(TLS 1.0)？
 
 ![](https://s1.ax1x.com/2022/04/17/LNUb1e.png)
 
@@ -32,7 +32,7 @@ wireshark 监控看看，走的是 TLSv1.2？
 
 但实战中不可能这么操作的。
 
-https://support.microsoft.com/zh-cn/topic/%E6%9B%B4%E6%96%B0%E4%BA%86-%E4%BB%A5%E5%9C%A8-windows-%E4%B8%AD%E7%9A%84-winhttp-%E4%B8%AD%E5%90%AF%E7%94%A8-tls-1-1-%E5%92%8C-tls-1-2-%E4%BD%9C%E4%B8%BA%E9%BB%98%E8%AE%A4%E5%AE%89%E5%85%A8%E5%8D%8F%E8%AE%AE-c4bd73d2-31d7-761e-0178-11268bb10392
+[默认安全协议](https://support.microsoft.com/zh-cn/topic/更新了-以在-windows-中的-winhttp-中启用-tls-1-1-和-tls-1-2-作为默认安全协议-c4bd73d2-31d7-761e-0178-11268bb10392)
 
 ![](https://s1.ax1x.com/2022/04/17/LNUHpD.png)
 
