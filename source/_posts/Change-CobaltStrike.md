@@ -16,7 +16,7 @@ banner_img: https://s1.ax1x.com/2022/09/16/vz5ZWT.png
 
 ### 0x01 反编译JAR包
 
-1、用IEDA中的 java-decompiler.jar来进行反编译CS (需要JDK 11及以上)。
+1、用IEDA中的 java-decompiler.jar(需要JDK 11+才可运行)来进行反编译CS。
 jar包位于：plugins\java-decompiler\lib
 Windows 下，即：C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.2\plugins\java-decompiler\lib
 
@@ -40,7 +40,7 @@ D:\JAVAPROJECT\CS-CMPILATION
 java -cp java-decompiler.jar org.jetbrains.java.decompiler.main.decompiler.ConsoleDecompiler -dsg=true .\cs_bin\cobaltstrike.jar .\cs_src
 ```
 
-反编译完成后得到cs的java源码， cs_src\cobaltstrike.jar 是个zip，解压即可导入IDEA。
+反编译完成后得到cs的java源码(cs_src\cobaltstrike.jar 是个zip需要解压。)
 
 
 ### 0x02 环境搭建
@@ -52,8 +52,8 @@ https://pingmaoer.github.io/2020/06/24/CobaltStrike二次开发环境准备/
 
 #### 新建 IDEA 项目
 
-JDK选 1.8 ，选择低版本jdk是为了向上兼容。
-然后新建俩文件夹，decompiled_src和lib，decompiled_src放反编译得到的源码，lib放原版cs jar包。
+新建项目JDK选 1.8 ，选择低版本jdk是为了向上兼容。
+项目创建后，在根目录新建俩文件夹：`decompiled_src` 和 `lib` 。decompiled_src 放反编译得到的所有源码文件，lib放原版cs jar包。
 
 <img src="https://cdn.nlark.com/yuque/0/2022/png/12849280/1650036219625-3f45166c-41da-4243-b959-f06ccda0f247.png" referrerPolicy="no-referrer" />
 
@@ -61,7 +61,7 @@ JDK选 1.8 ，选择低版本jdk是为了向上兼容。
 
 #### 设置项目结构
 
-IDEA左上角 文件 > 项目结构 > 模块 > 依赖 添加原版 cobalt strike.jar
+IDEA左上角 文件 > 项目结构 > 模块 > 依赖 添加原版 cobaltstrike.jar
 
 <img src="https://cdn.nlark.com/yuque/0/2022/png/12849280/1650036220147-59841a91-f4d9-4f14-95f4-62a99b3684d8.png" referrerPolicy="no-referrer" />
 
