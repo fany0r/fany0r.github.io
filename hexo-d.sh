@@ -1,5 +1,6 @@
 #!/bin/sh
 set -e
+hexo clean
 hexo g
 sleep 3
 shopt -s extglob
