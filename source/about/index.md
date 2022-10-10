@@ -9,9 +9,7 @@ date: 2021-12-19 15:03:09
 
 &emsp; Listen to self own voice
 
-<font color=#1bcc7c size=5>**#**</font> <font color=black size=5>**Contact**</font>
+<font color=#1bcc7c size=5>**#**</font> <font color=black size=5>**Description**</font>
 
 
-- 简述：一只正在安全道路上奋斗的菜鸡，本博客记录部分学习经历和笔记。
-
-<!--![](https://s1.ax1x.com/2020/05/13/YUcojI.jpg)-->
+&emsp; 一个正在安全道路上"奋斗"的菜鸡，博客主要记录自己的一些学习笔记、技术分享等，然后若干年后，回头看看那时的自己有多么的幼稚，仅此而已。
