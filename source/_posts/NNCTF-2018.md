@@ -12,9 +12,9 @@ date: 2018-12-20 14:06:33
 ---
 
 
-## WEB: ##
+## WEB:
 
-### 超简单的web题 ###
+### 超简单的web题
 
 直接截断拿到flag
 
@@ -24,7 +24,7 @@ http://gxnnctf.gxsosec.cn:12311/?no=1%00-
 
 ![](https://ae01.alicdn.com/kf/HTB1y.mkaBiE3KVjSZFM762QhVXa5.png)
 
-### Sqli??? ###
+### Sqli???
 
 看看这边`/.git/`返回403 感觉存在`git漏洞`
 
@@ -101,9 +101,9 @@ http://gxnnctf.gxsosec.cn:12312/index.php?backdoor=Melonrind&id=case%20when%20@x
 
 ![](https://ae01.alicdn.com/kf/HTB127alaBOD3KVjSZFF763n9pXay.png)
 
-## MISC: ##
+## MISC:
 
-### 这是啥 ###
+### 这是啥
 
 尝试了栅栏密码和凯撒密码，发现有点像凯撒密码
 
@@ -127,7 +127,7 @@ TMYRA}
 GXNNCT F{LEEM ENATRY ----CR YPATNA LYISS}
 ```
 
-### MISC2 ###
+### MISC2
 
 分析：
 
@@ -149,7 +149,7 @@ What，这是什么啊，新手的我一脸懵逼。后面baidu、Google了一�
 
 ![](https://ae01.alicdn.com/kf/HTB1HcymaBSD3KVjSZFq7634bpXav.png)
 
-### 太简单了 ###
+### 太简单了
 
 解压压缩包，里面这有个没有尾缀名的`flag`文件，老规矩，`file`一下看看是什么文件，是个`zip`压缩包，直接加上为尾缀名，解压
 
@@ -159,7 +159,7 @@ What，这是什么啊，新手的我一脸懵逼。后面baidu、Google了一�
 
 ![](https://ae01.alicdn.com/kf/HTB1iSX_Xkxz61VjSZFr760eLFXaJ.png)
 
-### Txt: ###
+### Txt:
 
 下载下来是一个txt文件，但是复制的时候好像有点问题
 
@@ -177,9 +177,9 @@ What，这是什么啊，新手的我一脸懵逼。后面baidu、Google了一�
 
 ![](https://ae01.alicdn.com/kf/HTB12ZmkaEGF3KVjSZFm762qPXXa7.png)
 
-## Pwn ##
+## Pwn
 
-### format ###
+### format
 
 > 格式化字符串盲打 通过printf的函数地址确定libc基址，从而获得system地址。
 > send字符串“/bin/sh;”，那么在调用printf(“/bin/sh;”)的时候实际上调用的是system(“/bin/sh;”)，
@@ -189,9 +189,9 @@ What，这是什么啊，新手的我一脸懵逼。后面baidu、Google了一�
 
 ![](https://ae01.alicdn.com/kf/HTB1Vy1kaEGF3KVjSZFv762_nXXaI.png)
 
-## MOBILE ##
+## MOBILE
 
-### IOS_200 ##
+### IOS_200
 
 > 题目描述：IOS送分题
 
@@ -212,9 +212,9 @@ What，这是什么啊，新手的我一脸懵逼。后面baidu、Google了一�
 
 ![](https://ae01.alicdn.com/kf/HTB1HuyqaBKw3KVjSZFO761rDVXaT.png)
 
-## BASIC:###
+## BASIC:
 
-### Her Majesty Queen Elizabeth II：###
+### Her Majesty Queen Elizabeth II:
 
 ```text
 FE&pd8dMFLR%)(DsGbhi@/dKPNR'*TUm?\tlr.7RV
@@ -224,13 +224,13 @@ FE&pd8dMFLR%)(DsGbhi@/dKPNR'*TUm?\tlr.7RV
 
 ![](https://ae01.alicdn.com/kf/HTB14vKqaBKw3KVjSZTE763uRpXaK.png)
 
-## 真—签到题：##
+## 真—签到题:
 
 关注公众号拿flag
 
-## Crypto: ##
+## Crypto:
 
-### 维吉尼亚遇上困难：###
+### 维吉尼亚遇上困难:
 
 这一段应该是维吉尼亚密码
 
@@ -244,7 +244,7 @@ BZGTNPMMCGZFPUWJCUIGRWXPFNLHZCKOAPGLKYJNRAQFIUYRAVGNPANUMDQOAHMWTGJDXGOMPJPTKAAV
 
 ![](https://ae01.alicdn.com/kf/Hfe537524fb7747ab9da36207a896ceedj.png)
 
-### Shamir重要数据损坏 ###
+### Shamir重要数据损坏
 
 >某集团总裁Shamir将自己使用的笔记本电脑上重要的秘密数据分割成5份子秘密数据，并分别存放在5个存储设备上，其中可以由至少3份子秘密数据联合参与运算，才能重构原来的秘密数据。分割方案使用的参数模数为5987。由于Shamir使用的笔记本电脑感染病毒致使该重要秘密数据损坏无法修复，于是Shamir让技术人员通过存放在编号为5、7、9的三个存储设备的子秘密数据进行重构重要秘密数据，其中编号5的存储设备存放的数据为（5,2258）、编号为7的存储设备存放的数据为（7,2424）、编号为9的存储设备存放的数据为（9,2630）。请问技术人员重构出来的重要秘密数据是多少？
 
