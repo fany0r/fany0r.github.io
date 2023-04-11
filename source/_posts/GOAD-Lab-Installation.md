@@ -124,7 +124,7 @@ domain_adapter=Ethernet1
 
 `VMware 文件 -> 扫描虚拟机 `，位置选GOAD的machines，即：`E:\GOAD\.vagrant\machines`，结果如下图：
 
-![vm lists](https://great.wzznft.com/i/2023/03/06/s45zwi.png)
+![vm lists](https://cdnjson.com/images/2023/04/11/image-20230215225429968.png)
 
 ### 0x03 运行ansible配置环境
 
@@ -156,7 +156,7 @@ ansible-playbook main.yml
 
 执行ansible配置环境需要很漫长的等待，并且很容报各种错误。报错原因无非就是网络问题以及虚拟机配置不足产生的。提高下配置，科学上网，然后反复执行ansible，直到没有红色报错即表示环境配置完成。
 
-![ansible](https://great.wzznft.com/i/2023/03/06/s46azb.png)
+![ansible](https://cdnjson.com/images/2023/04/11/image-20230217010325229.png)
 
 配置完后，给攻击机配个网络让其连通环境即可开撸。
 
