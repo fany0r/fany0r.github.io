@@ -551,10 +551,10 @@ post:
       format: "{} 分钟"
       # 每个字词的长度，建议：中文≈2，英文≈5
       # Average word length (chars count in word), ZH ≈ 2, EN ≈ 5
-      awl: 2
+      awl: 4
       # 每分钟阅读字数
       # Words per minute
-      wpm: 160
+      wpm: 275
 
     # 浏览量计数
     # Number of visits
@@ -926,7 +926,7 @@ links:
     }
     - {
       title: "倾旋",
-      intro: "前360人员 - 车王",
+      intro: "",
       link: "http://payloads.online/",
       avatar: "/img/links/倾旋.png"
     }
