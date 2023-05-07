@@ -9,11 +9,10 @@ date: 2022-08-20 21:10:44
 tags:
 ---
 
-此大黄蜂非擎天柱的里大黄蜂但它仍然在变形
 
 原文：https://www.proofpoint.com/us/blog/threat-insight/bumblebee-is-still-transforming
 
-## 主要重点
+## 重要发现
 
 - Proofpoint 监测到了一个名为 BumbleBee 的新恶意软件加载程序，该加载器由多个犯罪威胁组织在使用，观察到以往这些犯罪威胁者提供基本加载器(BazaLoader)和IcedID。
 - 一些常用BazaLoader的威胁攻击者已经过度到 BumbleBee 。从2022年2月开始，BazaLoader 尚未出现在Proofpoint数据中。
@@ -139,7 +138,7 @@ BumbleBee 是一款用C++写的下载器。分析的初始BumBleBee DLL样本包
 
 收集到所有这些信息后，加载器开始与 C2 通信，加载器每 25 秒检查一次 C2 以接收命令。和大多数具有立即返回给客户端的模块或有效负载的恶意软件不同，该恶意软件背后的攻击者似乎手动将有效负载部署到Bumblebee，因为它可能需要几个小时才能收到任何要执行的作业。每个服务器响应都包含下图中显示的数据的变体。如果返回有效任务，“tasks”值将是包含所有任务信息的字典列表。
 
-![*Bumblebee 响应内容](https://s1.ax1x.com/2022/08/20/vsLXW9.png)
+![Bumblebee 响应内容](https://s1.ax1x.com/2022/08/20/vsLXW9.png)
 
 *Bumblebee* 加载器支持以下命令：
 
@@ -233,7 +232,7 @@ Proofpoint 表示，在2022年4月19 日观察到的最新版本 BumbleBee 中�
 
 如果找到这些进程中的任何一个，该函数将返回 1，这会触发 BumbleBee 主线程终止。
 
-![BumBleBee检查工具列表](https://s1.328888.xyz/2022/08/20/B7m2w.png)
+![BumBleBee检查工具列表](https://s1.ax1x.com/2023/05/07/p9dNFeA.png)
 
 ## 结论
 
