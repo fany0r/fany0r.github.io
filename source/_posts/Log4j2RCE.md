@@ -91,7 +91,6 @@ public class HelloSlf4j {
 
 ![](https://s1.ax1x.com/2021/12/10/ooEx9H.png)
 
-!](https://s1.ax1x.com/2021/12/10/ooEx9H.png)
 
 高版本jdk需要开启 jndi
 
