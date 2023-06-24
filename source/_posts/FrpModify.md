@@ -15,21 +15,21 @@ tags:
 
 ### 环境
 
-​	Platform：Kali Linux
+Platform：Kali Linux
 
-​	Editor：IEDA（Golang）
+Editor：IEDA（Golang）
 
-​	Go Version：Go1.16
+Go Version：Go1.16
 
 <hr />
 
-​	下载master分支源码，建议通过git clone方式。IEDA打开。https://github.com/fatedier/frp/tree/master
+下载master分支源码，建议通过git clone方式。IEDA打开。https://github.com/fatedier/frp/tree/master
 
 注：以下使用的frp版本0.36.2的源码，其他版理论上也是可以用的。
 
 ### 改改标识
 
-​	全局查找替换：`json:"`，可自行替换为其他字符。
+全局查找替换：`json:"`，可自行替换为其他字符。
 
 ![](https://z3.ax1x.com/2021/05/14/grkStH.png)
 
@@ -52,7 +52,7 @@ func main() {
 
 `pkg/util/net/tls.go` 
 
-​	不好截图，直接上代码：
+不好截图，直接上代码：
 
 ```go
 package net
@@ -102,7 +102,7 @@ func CheckAndEnableTLSServerConnWithTimeout(c net.Conn, tlsConfig *tls.Config, t
 
 ### 修改websocket连接特征
 
-​	这一步可忽略，就当前来说websocket不常用。
+这一步可忽略，就当前来说websocket不常用。
 
 `pkg/util/net/websocket.go` 19行：
 
@@ -116,13 +116,13 @@ const (
 
 ### WSS加域前置？
 
-​	改了编译不出来，全是报错？暂时放弃。
+改了编译不出来，全是报错？暂时放弃。
 
 ### 修改读写逻辑，异或混淆字符
 
 `pkg/msg/ctl.go`
 
-​	注：感觉原文 https://www.notion.so/FRP-d3673da19ec74a8781c020bbea883fa2 
+注：感觉原文 https://www.notion.so/FRP-d3673da19ec74a8781c020bbea883fa2 
 
 这部分的代码没给全，编译后的frp使用有问题，连接不了......   **后面还是得用原来的，不做修改。**
 
@@ -207,7 +207,7 @@ func WriteMsg(c io.Writer, msg interface{}) (err error) {
 
 ### 编译打包
 
-​	只编译当前平台frp：
+只编译当前平台frp：
 
 ```
 rm -rf ./release/packages
@@ -296,7 +296,7 @@ zsh ./package.sh
 
 ### 后续1:把配置写入源码食用方式
 
-​	通常情况frp的运行程序要跟连接配置文件 `frpc/s.ini`一起传到目标机上运行。在某些情况下，如HVV时，可能会被其他师傅直接反日。 为了防止或者减少被直接"反打"，把配置写死在代码中可以在一定程度上避免泄露配置信息。
+通常情况frp的运行程序要跟连接配置文件 `frpc/s.ini`一起传到目标机上运行。在某些情况下，如HVV时，可能会被其他师傅直接反日。 为了防止或者减少被直接"反打"，把配置写死在代码中可以在一定程度上避免泄露配置信息。
 
 frpc.ini
 
@@ -327,7 +327,7 @@ cmd/frpc/sub/reload.go
 
 #### 改`root.go` 
 
-​	在var()中新建个变量保存配置内容：
+在var()中新建个变量保存配置内容：
 
 ```go
 fileContent = `
@@ -348,7 +348,7 @@ use_encryption = true
 
 #### 改`status.go`
 
-​	注释 41-45行，把 `fileContent`赋值给`iniContent` ，注意要转为`byte`
+注释 41-45行，把 `fileContent`赋值给`iniContent` ，注意要转为`byte`
 
 ```go
 var statusCmd = &cobra.Command{
@@ -412,17 +412,17 @@ content, err = []byte(fileContent), nil
 
 ### 后续2:通过参数传入食用方法
 
-​	参照 https://uknowsec.cn/posts/notes/FRP%E6%94%B9%E9%80%A0%E8%AE%A1%E5%88%92.html  【frpc.ini的ip通过参数传入】中的步骤进行修改。
+参照 https://uknowsec.cn/posts/notes/FRP%E6%94%B9%E9%80%A0%E8%AE%A1%E5%88%92.html  【frpc.ini的ip通过参数传入】中的步骤进行修改。
 
-​	**注**：需要使用`Jack-Kingdom`提供源码进行修改，不能使用官方的，否则无法编译？
+**注**：需要使用`Jack-Kingdom`提供源码进行修改，不能使用官方的，否则无法编译？
 
 Changfrp：`https://github.com/Jack-Kingdom/frp/tree/4a5c9a8796701472037c979b467c6a9ea449fd62`
 
 #### 定义传参
 
-​	编辑`cmd/frpc/root.go`
+编辑`cmd/frpc/root.go`
 
-​	在 `var()`中创建4个变量，然后修改 `init() ` 方法，传参：
+在 `var()`中创建4个变量，然后修改 `init() ` 方法，传参：
 
 ```go
 rootCmd.PersistentFlags().StringVarP(&ip, "server_addr", "t", "", "server_addr")
@@ -434,7 +434,7 @@ rootCmd.PersistentFlags().StringVarP(&fport, "remote_port", "f", "", "remote_por
 
 #### 创建存放配置信息的方法
 
-​	编辑：`cmd/frpc/sub/root.go`  ，新增 `getFileContent`函数：
+编辑：`cmd/frpc/sub/root.go`  ，新增 `getFileContent`函数：
 
 ```go
 func getFileContent(ip string, port string, fport string) {
@@ -453,7 +453,7 @@ plugin = socks5
 }
 ```
 
-​	修改`runClient`函数，传入参数:
+修改`runClient`函数，传入参数:
 
 ```go
 func runClient(cfgFilePath string, ip string, port string, fport string) (err error) {
@@ -482,13 +482,13 @@ func runClient(cfgFilePath string, ip string, port string, fport string) (err er
 
 ![](https://z3.ax1x.com/2021/05/14/grknhj.png)
 
-​	同一文件，100行附近 `var rootCmd = &cobra.Command` 中调用了`runClient()`，需要修改传入参数：
+同一文件，100行附近 `var rootCmd = &cobra.Command` 中调用了`runClient()`，需要修改传入参数：
 
 ![](https://z3.ax1x.com/2021/05/14/grkmNQ.png)
 
 #### 	编译打包
 
-​	`package.sh`
+`package.sh`
 
 ```sh
 # compile for version
@@ -534,7 +534,7 @@ cd -
 
 ### 后续3:加资源/图标混淆？	
 
-​	用 `Restorator` 加个图标，图标可以用 `BeCyIconGrabber` 从其他软件提取出来。
+用 `Restorator` 加个图标，图标可以用 `BeCyIconGrabber` 从其他软件提取出来。
 
 提取图标：
 
@@ -550,17 +550,15 @@ cd -
 
 ### 后续4:UPX压缩减小体积？
 
-​	@Secde0大佬说：`别压缩了，有些文件超过10m反而直接放行了，小的被拦截概率大`。我不信，上upx压缩后，用010Editor，删除一下头部标识：upx全部填充为0：
+@Secde0大佬说：`别压缩了，有些文件超过10m反而直接放行了，小的被拦截概率大`。我不信，上upx压缩后，用010Editor，删除一下头部标识：upx全部填充为0：
 
 ![](https://z3.ax1x.com/2021/05/14/grkYEF.png)
 
 eemm，压缩后确实加大查杀率了......
 
-​	1为不压缩、5为upx压缩、4为压缩+改标识
+1为不压缩、5为upx压缩、4为压缩+改标识
 
 
-![(https://z3.ax1x.com/2021/05/14/grktN4.png)
-=======
 ![](https://z3.ax1x.com/2021/05/14/grktN4.png)
 
 ### 试验
