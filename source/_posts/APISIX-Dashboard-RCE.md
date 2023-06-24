@@ -35,7 +35,7 @@ Shodan：`http.title:"Apache APISIX Dashboard"`
 
 能访问 http://x.x.x:9000/apisix/admin/migrate/export 则说明存在未授权访问配置文件，大概率可进行rce。
 
-![](https://s1.ax1x.com/2022/05/23/XpDe54.png)
+![图来自o2oxy.cn](https://s1.ax1x.com/2023/06/24/pCtB8UO.png)
 
 ### 0x03 利用
 
