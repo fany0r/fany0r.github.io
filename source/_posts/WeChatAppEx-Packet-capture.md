@@ -71,6 +71,7 @@ rules:
   ##
   # 把小程序主进程发起的请求转至BP
   - PROCESS-NAME,WeChatAppEx.exe,burpsuite
+  - PROCESS-NAME,WechatBrowser.exe,burpsuite
   ##
   # 默认全部直连
   - MATCH,DIRECT
@@ -103,6 +104,8 @@ https://www.codein.icu/clashtutorial/#%E7%BC%96%E8%BE%91%E8%A7%84%E5%88%99
 微信不需要任何设置，打开burpsuite开始基操即可。
 
 ![](https://s1.ax1x.com/2023/07/22/pCqdGAU.png)
+
+注：如果抓到包有很多 mmtls 请求或只显示ip地址和端口不显示域名，又或者无法转抓包时，可以尝试删除小程序文件夹/多次重启Clash等操作。
 
 Reference
 
