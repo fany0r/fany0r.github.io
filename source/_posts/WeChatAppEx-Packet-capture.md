@@ -11,7 +11,7 @@ tags:
 
 ### 0x01 环境
 
-Windows 10 x64（需提前安装好BP证书至`受信任的根证书颁发机构`中）
+Windows 10 x64 1908（需提前安装好BP证书至系统上`受信任的根证书颁发机构`中）
 
 BurpSuite v2023.4.5
 
@@ -48,7 +48,7 @@ proxies:
     port: 8080             # Burp Suite端口
 
 proxy-groups:              # 代理组
-  - name: ✨转发至         # 组名
+  - name: ✨转发至          # 组名
     proxies:
       - burpsuite
     type: select
@@ -80,7 +80,7 @@ rules:
 
 如有使用其他代理工具，按需修改以上rules。
 
-详细见：
+更多规则详细见：
 
 https://docs.cfw.lbyczf.com/contents/ui/profiles/rules.html
 
@@ -105,7 +105,11 @@ https://www.codein.icu/clashtutorial/#%E7%BC%96%E8%BE%91%E8%A7%84%E5%88%99
 
 ![](https://s1.ax1x.com/2023/07/22/pCqdGAU.png)
 
-注：如果抓到包有很多 mmtls 请求或只显示ip地址和端口不显示域名，又或者无法转抓包时，可以尝试删除小程序文件夹/多次重启Clash等操作。
+注：如果抓到包有很多 mmtls 请求或只显示ip地址和端口不显示域名，又或者无法转抓包时，可以尝试
+
+1、删除小程序文件夹下所有内容（默认在 `C:\Users\XXXX\Documents\WeChat Files\Applet` ）
+
+2、多次重启Clash等。
 
 Reference
 
