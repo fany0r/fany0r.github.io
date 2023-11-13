@@ -1,5 +1,5 @@
 ---
-title: 记一次炫龙毁灭者DD2换屏&更新BIOS过程
+title: 炫龙毁灭者DD2换屏&更新BIOS过程
 categories:
   - 杂项
 index_img: 'https://s1.ax1x.com/2022/09/04/vT3o4K.jpg'

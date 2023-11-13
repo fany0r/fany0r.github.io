@@ -18,9 +18,7 @@ date: 2018-12-20 14:06:33
 
 直接截断拿到flag
 
-```
-http://gxnnctf.gxsosec.cn:12311/?no=1%00-
-```
+`http://gxnnctf.gxsosec.cn:12311/?no=1%00-`
 
 ![](https://ae01.alicdn.com/kf/HTB1y.mkaBiE3KVjSZFM762QhVXa5.png)
 
@@ -33,7 +31,7 @@ http://gxnnctf.gxsosec.cn:12311/?no=1%00-
 随后用python恢复一下git文件恢复。
 
 ![](https://ae01.alicdn.com/kf/HTB1vWOkaEKF3KVjSZFE760ExFXau.png)
- 
+
 可以看到验证了git文件泄露的存在， 跑出来一个`index.php `
 
 ![](https://ae01.alicdn.com/kf/HTB1v_mjav5G3KVjSZPx762I3XXat.png)
@@ -43,7 +41,7 @@ http://gxnnctf.gxsosec.cn:12311/?no=1%00-
 ![](https://ae01.alicdn.com/kf/HTB1zOKqaBCw3KVjSZR0762cUpXay.png)
 
 `if($username === 'guest'){    if($username === 'admin'){ ` 
- 
+
 条件是两个查询 一个是`guest `一个是`admin` 可见可能是利用条件语句来查询数据库。
 
 `if(preg_match('#sleep|benchmark|floor|rand|count|select|from|\(|\)|time|date|sec|day#is',$ip)){`
@@ -295,3 +293,41 @@ A*=16/1	A12  A22 A32    =    -32/16       56/16   -24/16   =   -2     3.5      -
 
 2258x7.875-2424x11.25+2530x4.375=2018 
 ```
+
+
+#### ChaGPT的回答
+
+这是一个使用 Shamir's Secret Sharing Scheme 进行秘密数据重构的问题。Shamir's Secret Sharing Scheme 是一种秘密共享方法，它通过将秘密拆分为多个部分，然后至少需要其中一部分来重构原始秘密。
+
+在这个问题中，三个存储设备的数据为（5,2258）、（7,2424）、（9,2630）。每个数据包含两个值，一个是存储设备的编号，另一个是对应的子秘密数据。
+
+Shamir's Secret Sharing Scheme 的公式如下：
+
+$$
+f(x) = a_0 + a_1x + a_2x^2 + \ldots + a_{t-1}x^{t-1} + a_tx^t \mod p
+$$
+其中，$p$ 是参数模数（在这个问题中为5987），$t$ 是阈值，$a_0, a_1, \ldots, a_t $ 是秘密数据的系数。
+
+在这个问题中，$t = 2$，因为需要至少三个设备来重构原始秘密数据。我们有三个点 $(5,2258)$、$(7,2424)$ 和$(9,2630)$。
+
+现在，我们可以使用拉格朗日插值法来找到 $f(0)$，即 $x=0$ 时的函数值，这个值就是原始秘密数据。拉格朗日插值法的公式如下：
+
+$$
+f(0) = \sum_{i=1}^{t} y_i \prod_{j=1,j\neq i}^{t} \frac{x_j}{x_j - x_i} \mod p
+$$
+其中，$(x_i, y_i)$ 是每个点的坐标。在这个问题中，我们有：
+
+$$
+\begin{align*}
+x_1 &= 5, & y_1 &= 2258 \\
+x_2 &= 7, & y_2 &= 2424 \\
+x_3 &= 9, & y_3 &= 2630 \\
+\end{align*}
+$$
+将这些值代入插值公式中，得到原始秘密数据：
+
+$$
+f(0) = 2258 \cdot \frac{(0-7)(0-9)}{(5-7)(5-9)} + 2424 \cdot \frac{(0-5)(0-9)}{(7-5)(7-9)} + 2630 \cdot \frac{(0-5)(0-7)}{(9-5)(9-7)} \mod 5987
+$$
+计算这个表达式，即可得到重构出来的重要秘密数据。请注意，在模运算中，需要确保计算的结果始终保持在模数$( p )$ 的范围内。
+
