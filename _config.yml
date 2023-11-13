@@ -148,3 +148,7 @@ image_minifier:
   optimizationLevel: 2
   pngquant: false
   progressive: false
+
+markdown:
+  plugins:
+    - "@traptitech/markdown-it-katex"

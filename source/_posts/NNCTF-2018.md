@@ -9,6 +9,7 @@ abbrlink: 1137788d
 index_img: https://ae01.alicdn.com/kf/HTB1zQOhav1G3KVjSZFkq6yK4XXaK.jpg
 banner_img: https://ae01.alicdn.com/kf/HTB1zQOhav1G3KVjSZFkq6yK4XXaK.jpg
 date: 2018-12-20 14:06:33
+math: true
 ---
 
 
@@ -306,6 +307,7 @@ Shamir's Secret Sharing Scheme 的公式如下：
 $$
 f(x) = a_0 + a_1x + a_2x^2 + \ldots + a_{t-1}x^{t-1} + a_tx^t \mod p
 $$
+
 其中，$p$ 是参数模数（在这个问题中为5987），$t$ 是阈值，$a_0, a_1, \ldots, a_t $ 是秘密数据的系数。
 
 在这个问题中，$t = 2$，因为需要至少三个设备来重构原始秘密数据。我们有三个点 $(5,2258)$、$(7,2424)$ 和$(9,2630)$。
@@ -315,6 +317,7 @@ $$
 $$
 f(0) = \sum_{i=1}^{t} y_i \prod_{j=1,j\neq i}^{t} \frac{x_j}{x_j - x_i} \mod p
 $$
+
 其中，$(x_i, y_i)$ 是每个点的坐标。在这个问题中，我们有：
 
 $$
@@ -329,5 +332,6 @@ $$
 $$
 f(0) = 2258 \cdot \frac{(0-7)(0-9)}{(5-7)(5-9)} + 2424 \cdot \frac{(0-5)(0-9)}{(7-5)(7-9)} + 2630 \cdot \frac{(0-5)(0-7)}{(9-5)(9-7)} \mod 5987
 $$
-计算这个表达式，即可得到重构出来的重要秘密数据。请注意，在模运算中，需要确保计算的结果始终保持在模数$( p )$ 的范围内。
+
+计算这个表达式，即可得到重构出来的重要秘密数据。请注意，在模运算中，需要确保计算的结果始终保持在模数$p$ 的范围内。
 
