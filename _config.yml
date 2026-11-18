@@ -109,7 +109,7 @@ theme: fluid
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/Kuibagit/Kuibagit.github.io.git
+  repo: https://github.com/fany0r/fany0r.github.io.git
   branch: master
 
 sitemap:
