@@ -1,0 +1,73 @@
+<html lang="en-US">
+<head>
+  <title>404 Not Found</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8;"/>
+  <meta name="robots" content="all" />
+  <meta name="robots" content="index,follow"/>
+</head>
+<style>
+  body {
+    background-color: rgb(32, 103, 178);
+  }
+  #head {
+    font-size: 75px;
+  }
+  .section {
+    margin: 180px auto;
+    width: 75%;
+  }
+  .section a {
+      color: #42b983;
+      word-break: break-all;
+  }
+  p {
+    color: white;
+    font-size: 20px;
+  }
+</style>
+
+<body scroll="no" id="404">
+  <div class="section">
+    <p id="head">404 :(</p>
+
+    <p>Ooooops, a problem has been detected.</p>
+
+    <p>REQUEST_PAGE_NOT_FOUND_IN_THIS_BLOG</p>
+
+    <p>Sorry, but the page you requested could not be found. In <span id="timer">10</span> seconds, you will be redirected to the home page <a href="https://guosec.online">https://guosec.online/</a></p>
+
+  </div>
+
+  <script>
+    (function() {
+      /**
+       * timer
+       */
+      var timerDom = document.getElementById('timer');
+      var count = 10;
+      var timer = setInterval(function() {
+        timerDom.textContent = (count--);
+        if (count === 0) {
+          clearInterval(timer);
+          location.href = "/"
+        }
+      }, 1000);
+
+      /**
+       * for geeks
+       */
+      var str = 
+      "      .---.     .----.       .---.\n\
+     / .  |    /  ..  \\     / .  |\n\
+    / /|  |   .  /  \\  .   / /|  |\n\
+   / / |  |_  |  |  '  |  / / |  |_\n\
+  /  '-'    | '  \\  /  ' /  '-'    |\n\
+  `----|  |-'  \\  `'  /  `----|  |-'\n\
+       `--'     `---''        `--'"
+      console.log(str);
+    })();
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+User-agent: googlebot-image
+Disallow: /
+
+User-agent: *
+Allow: /
+Allow: /post/
+Allow: /archives/
+Allow: /tags/
+Allow: /categories/
+
+Disallow: /about/
+
+Disallow: /js/
+Disallow: /lib/
+Disallow: /css/
+Disallow: /assets/js/
+Disallow: /assets/css/
+
+Sitemap: https://guosec.online/sitemap.xml
